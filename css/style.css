@@ -39,45 +39,7 @@ body {
 }
 
 /* 공통 클래스 */
-
-/* 상단 */
-.header {
+.wrap {
 }
-.header .inner {
-}
-
-/* 카드뉴스 */
-.card-news {
-}
-.card-news .inner {
-}
-
-/* 커뮤니티 */
-.community {
-}
-.community .inner {
-}
-
-/* 인기 기사 */
-.hot-news {
-}
-.hot-news .inner {
-}
-
-/* 연재 기사 */
-.series-news {
-}
-.series-news .inner {
-}
-
-/* 뉴스룸 구독 */
-.subscribe {
-}
-.subscribe .inner {
-}
-
-/* 하단 */
-.footer {
-}
-.footer .inner {
+.inner {
 }
