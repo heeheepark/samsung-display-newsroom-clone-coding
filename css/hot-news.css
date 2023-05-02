@@ -6,10 +6,13 @@
 .hot-news .inner {
   height: 675px;
 }
-.sw-hot-news {
+.hot-news-content {
   width: 380px;
   height: 460px;
 }
 .hot-news-img {
   height: 237px;
+}
+.hot-news-text {
+  height: 220px;
 }

@@ -44,3 +44,8 @@ body {
 .inner {
   width: 1400px;
 }
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
