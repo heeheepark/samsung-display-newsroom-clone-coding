@@ -43,9 +43,11 @@ body {
 }
 .inner {
   width: 1400px;
+  margin: 0 auto;
 }
 h2 {
   font-size: 34px;
   font-weight: 700;
   letter-spacing: -1px;
+  text-align: center;
 }

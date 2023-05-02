@@ -572,11 +572,15 @@
       <section class="hot-news">
         <div class="inner">
           <h2 class="hot-news-title">인기 기사</h2>
-          <div class="hot-news-btns">
-            <button><img src="images/left_btn.svg" alt="왼쪽버튼" /></button>
-            <button><img src="images/right_btn.svg" alt="오른쪽버튼" /></button>
-          </div>
           <div class="hot-news-list">
+            <div class="hot-news-btns">
+              <button class="hot-news-prev-btn">
+                <img src="images/left_btn.svg" alt="왼쪽버튼" />
+              </button>
+              <button class="hot-news-next-btn">
+                <img src="images/right_btn.svg" alt="오른쪽버튼" />
+              </button>
+            </div>
             <div class="swiper sw-hot-news">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -699,6 +703,16 @@
                 </div>
               </div>
             </div>
+            <script>
+              var swiper = new Swiper(".sw-hot-news", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                  nextEl: ".hot-news-next-btn",
+                  prevEl: ".hot-news-prev-btn",
+                },
+              });
+            </script>
           </div>
         </div>
       </section>
