@@ -29,12 +29,14 @@
   top: 230px;
   left: -27px;
   z-index: 9;
+  opacity: 85%;
 }
 .hot-news-next-btn {
   position: absolute;
   top: 230px;
   right: -27px;
   z-index: 9;
+  opacity: 85%;
 }
 .hot-news-content {
   display: block;
