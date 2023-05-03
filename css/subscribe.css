@@ -4,8 +4,14 @@
 .subscribe {
 }
 .subscribe .inner {
-  width: 1490px;
   height: 228px;
   background: rgb(207, 239, 252);
   border-radius: 6px;
+}
+.subscribe .letter {
+  width: 101px;
+  height: 95px;
+}
+.subscribe > info {
+  display: inline-block;
 }

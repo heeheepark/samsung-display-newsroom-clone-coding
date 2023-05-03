@@ -2,18 +2,68 @@
 
 /* 하단 */
 .footer {
-  width: 100%;
-  background: #000;
+  background: rgb(29, 29, 29);
 }
 .footer .inner {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 270px;
 }
-.footer .memu > li > a {
-  width: 40px;
-  height: 10px;
-  display: inline-block;
-  float: left;
+.high {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.footer .middle > p {
+.footer .left {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  /* 너비 걸어줘야함 */
+  justify-content: space-between;
+
+  color: rgb(255, 255, 255);
+
   font-weight: 700;
+}
+.left .logo img {
+  margin-right: 80px;
+}
+.center {
+}
+.center .menu1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.center .menu1 > li {
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  padding-right: 50px;
+}
+.center .menu1 > li > a {
+  font-family: "Pretendard", "sans-serif";
+  color: rgb(250, 250, 250);
+}
+.right {
+}
+.right .menu2 {
+  display: flex;
+  width: 220px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .low {
+}
+.footer .low > span {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  font-weight: 400;
+  color: rgb(113, 123, 121);
 }
