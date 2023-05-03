@@ -91,7 +91,107 @@
       <!-- // 상단 -->
       <!-- 카드뉴스 : 오영지 -->
       <section class="card-news">
-        <div class="inner"></div>
+        <div class="inner">
+          <button class="cn-bt cn-prev-bt">
+            <img src="images/left_btn.svg" alt="이전" />
+          </button>
+          <button class="cn-bt cn-next-bt">
+            <img src="images/right_btn.svg" alt="다음" />
+          </button>
+
+          <div class="swiper cn-card-news">
+            <div class="swiper-wrapper">
+              <!--first slide -->
+              <div class="swiper-slide">
+                <a href="#" class="image">
+                  <img
+                    src="images/card-news/card-news1.jpg"
+                    alt="팝아트의 시작과 진화"
+                  />
+                  <div class="info">
+                    <h2>
+                      팝아트의 시작과 진화 <데이비드 호크니 & 브리티시 팝아트>
+                      展
+                    </h2>
+                    <span>
+                      많은 이가 팝아트는 미국에서 시작됐다고 오해하지만,<br />
+                      사실 영국에서 시작됐다는 게 정설입니다. 오늘은<br />
+                      <데이비드 호크니 & 브리티시 팝아트> 展을 통해 팝아트의
+                      탄생과 진화 그리고 그 현재에 대해 전해드립니다.
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="image">
+                  <img
+                    src="images/card-news/card-news2.jpg"
+                    alt="스마트폰 디스플레이 다이아몬드"
+                  />
+                  <div class="info">
+                    <h2>
+                      스마트폰 디스플레이를 자세히 보면 다이아몬드가 보인다?
+                    </h2>
+                    <span>
+                      한 번에 이해 가능한 삼성디스플레이의 지적재산권을<br />소개하는
+                      코너, '한가지' 첫 번째로 살펴볼 지식재산권은<br />
+                      바로 '다이아몬드 픽셀'! 더 선명한 화질을 구현하는,
+                      독자적인 이 기술을 지금 카드뉴스로 만납니다.
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="image">
+                  <img
+                    src="images/card-news/card-news3.png"
+                    alt="가짜 다이아몬드의 범인"
+                  />
+                  <div class="info">
+                    <h2>
+                      [사건파일 D텍티브🔍] EP.1 가짜 다이아몬드를 파는 범인은
+                      누구?
+                    </h2>
+                    <span>
+                      탐정 'D'에게 제보가 들어왔다! 누군가 훔친 기술로 가짜<br />다이아몬드를
+                      제작해 시중에 유통시키고 있다는데! 가짜<br />다이아몬드와는
+                      확연히 다른 진짜 다이아몬드는 바로~~~ 삼성 OLED의 픽셀
+                      기술! 아무나 흉내낼 수 없는 '삼성 OLED의 다이아몬드 픽셀'
+                      기술을 지금 바로 확인해 보세요~!
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div class="card-news-control">
+            <div class="pagination card-news-pg"></div>
+          </div>
+          <!-- initialize swiper -->
+          <script>
+            var swiper = new Swiper(".cn-card-news", {
+              slidesPerView: 1,
+              spaceBetween: 24,
+              speed: 1000,
+              loop: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+
+              navigation: {
+                nextEl: ".cn-next-bt",
+                prevEl: ".cn-prev-bt",
+              },
+              pagination: {
+                el: ".card-news-pg",
+                // 클릭이 가능
+                clickable: true,
+              },
+            });
+          </script>
+        </div>
       </section>
       <!-- // 카드뉴스 -->
       <!-- 커뮤니티 : 박주희 -->
@@ -104,154 +204,201 @@
         <div class="inner"></div>
       </section>
       <!-- // 인기 기사 -->
+
       <!-- 연재 기사 : 오영지 -->
       <section class="series-news">
         <div class="inner">
-          <ul class="menu">
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news1.png"
-                  alt="사건파일 D텍티브"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news2.png"
-                  alt="오늘 이 전시 어때"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news3.png"
-                  alt="미술관에 간 과학자"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news4.png"
-                  alt="요리조리 기술맛집"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news5.png"
-                  alt="Replay the Display"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news6.png"
-                  alt="어쩌다 통근버스"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news7.png"
-                  alt="SDC 톡파원"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/series-news/series-news8.png" alt="D Shorts" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news9.png"
-                  alt="직장인 브이로그"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news10.png"
-                  alt="디스플레이 용어알기"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news11.png"
-                  alt="디스플레이 톺아보기"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/series-news/series-news12.png" alt="YESG구" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news13.png"
-                  alt="친절한 D맨"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/series-news/series-news14.png" alt="디톡쇼" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news15.png"
-                  alt="SDC On The Stage"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news16.png"
-                  alt="퀀텀닷 완전 정복"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news17.png"
-                  alt="컬러 & 디스플레이"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news18.png"
-                  alt="한 컷 일러스트"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="images/series-news/series-news19.png"
-                  alt="일상 속 디스플레이의 발견"
-                />
-              </a>
-            </li>
-          </ul>
+          <p>삼성디스플레이만의 다양한 이야기를 시리즈로 보실 수 있습니다.</p>
+
+          <button class="sn-bt sn-prev-bt">
+            <img src="images/left_btn.svg" alt="이전" />
+          </button>
+          <button class="sn-bt sn-next-bt">
+            <img src="images/right_btn.svg" alt="다음" />
+          </button>
+
+          <div class="swiper sn-series-news">
+            <div class="swiper-wrapper">
+              <!-- last slide -->
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news1.png"
+                    alt="사건파일 D텍티브"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news2.png"
+                    alt="오늘 이 전시 어때"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news3.png"
+                    alt="미술관에 간 과학자"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news4.png"
+                    alt="요리조리 기술맛집"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news5.png"
+                    alt="Replay the Display"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news6.png"
+                    alt="어쩌다 통근버스"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news7.png"
+                    alt="SDC 톡파원"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news8.png"
+                    alt="D Shorts"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news9.png"
+                    alt="직장인 브이로그"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news10.png"
+                    alt="디스플레이 용어알기"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news11.png"
+                    alt="디스플레이 톺아보기"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news12.png"
+                    alt="YESG구"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news13.png"
+                    alt="친절한 D맨"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news14.png"
+                    alt="디톡쇼"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news15.png"
+                    alt="SDC On The Stage"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news16.png"
+                    alt="퀀텀닷 완전 정복"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news17.png"
+                    alt="컬러 & 디스플레이"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news18.png"
+                    alt="한 컷 일러스트"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/series-news/series-news19.png"
+                    alt="일상 속 디스플레이의 발견"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- last(3th) swiper -->
+          <script>
+            new Swiper(".sn-series-news", {
+              slidesPerView: 5,
+              spaceBetween: 24,
+              speed: 1000,
+              loop: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+              },
+
+              navigation: {
+                nextEl: ".series-news .sn-next-bt",
+                prevEl: ".series-news .sn-prev-bt",
+              },
+
+              // breakpoints: {
+              //   760: {
+              //     slidesPerView: 2,
+              //   },
+              // },
+            });
+          </script>
         </div>
       </section>
       <!-- // 연재 기사 -->
