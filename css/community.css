@@ -4,4 +4,148 @@
 .community {
 }
 .community .inner {
+  height: 860px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.community-left {
+  width: 760px;
+  margin-right: 35px;
+}
+.recent-news {
+  margin-top: 50px;
+  position: relative;
+}
+.recent-news::after {
+  position: absolute;
+  top: 0;
+  right: -35px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 678px;
+  background: rgb(225, 225, 225);
+}
+.recent-news-list {
+  display: inline-block;
+  width: 360px;
+  height: 360px;
+  margin: 0 17px;
+}
+.recent-news-list:nth-child(2n) {
+  margin-right: 0;
+}
+.recent-news-list:nth-child(2n-1) {
+  margin-left: 0;
+}
+.recent-news-img {
+  width: 100%;
+  height: 360px;
+}
+.recent-news-img img {
+  width: 100%;
+  height: 226px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.recent-news-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  height: 62px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 30px;
+}
+.community-right {
+  width: 360px;
+  margin-left: 35px;
+}
+.hot-clip {
+  margin-top: 50px;
+}
+.hot-clip-content {
+  display: inline-block;
+  width: 360px;
+  height: 360px;
+}
+.hot-clip-img {
+  width: 100%;
+  height: 226px;
+  position: relative;
+}
+.hot-clip-thumb {
+  width: 100%;
+  height: 226px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.hot-clip-youtube {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 90px;
+  left: calc(50% - 28px);
+  opacity: 90%;
+}
+.hot-clip-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31px;
+  height: 62px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 30px;
+}
+.library {
+  width: 360px;
+  height: 360px;
+}
+.library a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 360px;
+  height: 146px;
+  padding: 32px 14px 34px 35px;
+}
+.library-desc {
+  width: 100%;
+  background: rgb(241, 248, 254);
+  border-radius: 12px;
+}
+.library-word {
+  background: rgb(232, 249, 239);
+  border-radius: 12px;
+  margin-top: 23px;
+}
+.library-text-area {
+}
+.d-library {
+  color: rgb(60, 124, 250);
+  font-size: 13px;
+  font-weight: 600;
+}
+.library-text {
+  color: rgb(29, 29, 29);
+  margin-top: 20px;
+}
+.library-text b {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.library-icon {
+  display: inline-block;
+  width: 100px;
+  height: 128px;
 }
