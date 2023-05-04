@@ -17,6 +17,8 @@
 .recent-news {
   margin-top: 50px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 .recent-news::after {
   position: absolute;
