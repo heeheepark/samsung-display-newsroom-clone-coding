@@ -4,4 +4,27 @@
 .series-news {
 }
 .series-news .inner {
+  display: block;
+}
+.sn-series-news .swiper-slide {
+}
+.sn-series-news .image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 240px;
+
+  overflow: hidden;
+}
+.sn-series-news .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* max-width: 230px;
+  max-height: 240px; */
+
+  object-fit: cover;
+}
+.series-news .info {
+  color: #fff;
 }

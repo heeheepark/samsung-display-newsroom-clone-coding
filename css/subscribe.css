@@ -2,16 +2,67 @@
 
 /* 뉴스룸 구독 */
 .subscribe {
+  height: 384px;
+  padding-top: 102px;
 }
 .subscribe .inner {
-  height: 228px;
-  background: rgb(207, 239, 252);
-  border-radius: 6px;
+  position: relative;
+  height: 168px;
+  background: url(/images/subscribe/newsletter_bg.svg);
+}
+
+.subscribe .content {
+  display: flex;
+  
+  justify-content: space-around;
+ 
+}
+.subscribe .content > img {
+  /* margin: 0 auto; */
 }
 .subscribe .letter {
-  width: 101px;
-  height: 95px;
+  padding-left: 41px;
 }
-.subscribe > info {
-  display: inline-block;
+.subscribe .letter img {
+  /* padding-top: 50px;
+  padding-left: 73px; */
+}
+.subscribe .info {
+  /* position: absolute; */
+  /* margin-left: -22px; */
+}
+.subscribe .info h2 {
+  margin-top: 5px;
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: start;
+}
+.subscribe .info span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.subscribe .button {
+  /* position: absolute; */
+  width: 160px;
+  height: 50px;
+  border-radius: 30px;
+  background: #263070;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #ffffff;
+  margin-right: 38px;
+}
+.subscribe .button p {
+}
+.apply p {
+  margin-top: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
 }

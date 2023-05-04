@@ -16,6 +16,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 23px;
 }
 .footer .left {
   width: 600px;
@@ -59,11 +60,12 @@
   justify-content: space-between;
 }
 .footer .low {
+  padding-bottom: 30px;
 }
 .footer .low > span {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: -0.4px;
   font-weight: 400;
-  color: rgb(113, 123, 121);
+  color: #8e8e8e;
 }
