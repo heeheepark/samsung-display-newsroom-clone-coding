@@ -6,20 +6,20 @@ let mainMenu = document.querySelector(".main-menu");
 let subMenu = document.querySelectorAll(".submenu");
 let header = document.querySelector(".header");
 
-console.log(subMenu);
-
 searchBtn.addEventListener("click", function () {
   blackBg.style.display = "block";
   searchBtn.style.display = "none";
   searchCloseBtn.style.display = "block";
   searchArea.style.top = "0px";
+  searchArea.style.boxShadow = "3px 3px 5px rgba(0, 0, 0, 0.15)";
 });
 
 searchCloseBtn.addEventListener("click", function () {
-  blackBg.style.display = "block";
+  blackBg.style.display = "none";
   searchBtn.style.display = "block";
   searchCloseBtn.style.display = "none";
   searchArea.style.top = "-208px";
+  searchArea.style.boxShadow = "none";
 });
 
 mainMenu.addEventListener("mouseover", function () {
