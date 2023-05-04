@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 95px;
+  height: 95px; /* 95px 280px */
   border-bottom: 1px solid rgb(228, 228, 228);
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.04);
   background: #fff;
@@ -16,10 +16,10 @@
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 114px 0 52px;
+  padding: 24px 114px 24px 52px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .logo {
   width: 161px;
@@ -41,15 +41,17 @@
   padding: 0 30px;
 }
 .gnb .main-menu > li {
+  margin: 0 10px;
 }
 .gnb .main-menu > li > a {
+  display: inline-block;
   font-size: 19px;
   font-weight: 600;
-}
-.main-menu .submenu {
-  display: none;
+  padding: 12px 0;
 }
 .submenu {
+  display: none;
+  padding: 33px 0;
 }
 .submenu li {
 }
@@ -57,11 +59,16 @@
   font-size: 16px;
   line-height: 37px;
 }
+.submenu li:hover a {
+  font-weight: 600;
+}
 .side-menu {
+  position: relative;
   width: 252px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 6px 0;
 }
 .side-menu-left {
   width: 106px;
@@ -79,7 +86,7 @@
   text-align: center;
 }
 .side-menu-mid {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .side-menu-right > button {
   border: none;
@@ -88,7 +95,7 @@
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 20px);
-  right: 55px;
+  right: -57px;
 }
 .side-menu-right > button:hover {
   box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
@@ -113,6 +120,8 @@
   align-items: center;
   justify-content: space-around;
   padding: 21px 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
 }
 .search-box {
   width: 640px;
