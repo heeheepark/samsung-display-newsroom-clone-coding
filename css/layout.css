@@ -61,3 +61,16 @@ h2 {
   background: rgb(0, 0, 0, 0.15);
   z-index: 999999;
 }
+.fix-banner {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	
+
+}
+.goTop {
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+}
