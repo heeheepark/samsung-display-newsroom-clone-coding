@@ -30,6 +30,7 @@
   left: -27px;
   z-index: 9;
   opacity: 85%;
+  display: none;
 }
 .hot-news-next-btn {
   position: absolute;
