@@ -2,6 +2,125 @@
 
 /* 카드뉴스 */
 .card-news {
+	
 }
 .card-news .inner {
+  position:relative;
+	height: 400px;
+	margin-top:60px;
+	margin-bottom: 85px;
+
 }
+/* .cn-card-news .image {
+  display: flex;
+} */
+.card-news .btns {
+	position: absolute;
+z-index: 5;
+
+}
+
+.card-news .cn-prev-bt {
+	position: absolute;
+	width: 54px;
+	height: 54px;
+border: none;
+border-radius: 50%;
+opacity: 85%;
+top: 192px;
+left: -57px;
+cursor: pointer;
+transform: translate( 50% , -50% );
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.23);
+}
+.card-news .cn-next-bt {
+	position: absolute;
+	width: 54px;
+	height: 54px;
+border: none;
+	border-radius: 50%;
+	border-radius: 50%;
+	opacity: 85%;
+	top: 193px;
+right: -1259px;
+cursor: pointer;
+transform: translate(-50% , -50%);
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.23);
+}
+.cn-card-news-wrap {
+  display: flex;
+  border-radius: 8.5px 8.5px 8.5px 8.5px;
+  overflow: hidden;
+	border-radius: 29px;
+  box-shadow:0px 8px 18px 0px rgba(91 , 91 , 91 , 0.14 ); 
+}
+.cn-card-news-left {
+  width: 50%;
+}
+.cn-card-news-left .image {
+  display: block;
+  width: 100%;
+}
+.cn-card-news-left .image img {
+  width: 100%;
+}
+.cn-card-news-right {
+  width: 50%;
+}
+.cn-card-news-right .image-info {
+  display: block;
+  width: 100%;
+}
+.cn-card-news-right .info {
+	display: flex;
+	flex-direction: column;
+	margin: 45px 60px 0 55px;
+	text-align: center;
+}
+.cn-card-news-right .info h2 {
+	margin:0 20px;
+display: -webkit-box;
+	font-size: 33px;
+line-height:48px;
+letter-spacing: -1.3px;
+text-overflow: ellipsis;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+word-break: keep-all;
+text-align: start;
+}
+
+.cn-card-news-right .image-info .info span {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+	width: 465px;
+	height: 75px;
+	letter-spacing:-0.5px;
+margin-left: 20px;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	word-break:keep-all;
+	text-align: start;
+	margin-top: 20px;
+}
+.card-news  .card-news-control {
+	
+	text-align: center;
+	margin-top: 27px;
+	margin-left: -193px;
+}
+
+.swiper-pagination-bullet {
+	display: inline-block;
+	width: 60px;
+	height: 5px;
+	border-radius: 5px;
+}
+.swiprt-pagination-bullet-active {
+	display: inline-block;
+	
+	}

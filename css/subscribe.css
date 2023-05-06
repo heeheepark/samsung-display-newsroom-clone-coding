@@ -2,37 +2,37 @@
 
 /* 뉴스룸 구독 */
 .subscribe {
-  height: 384px;
-  padding-top: 102px;
+	
 }
 .subscribe .inner {
-  position: relative;
-  height: 168px;
-  background: url(/images/subscribe/newsletter_bg.svg);
+
+	position: relative;
+  background: url("/images/subscribe/newsletter_bg.svg") no-repeat center;
 }
 
 .subscribe .content {
-  display: flex;
-  
+	
+	display: flex;	
+	width: 100%;
+	height: 169px;
+	margin:100px 0px;
   justify-content: space-around;
- 
+
 }
 .subscribe .content > img {
   /* margin: 0 auto; */
 }
 .subscribe .letter {
-  padding-left: 41px;
+  margin-top: 43px;
+  margin-left: 38px;
 }
-.subscribe .letter img {
-  /* padding-top: 50px;
-  padding-left: 73px; */
-}
+
 .subscribe .info {
-  /* position: absolute; */
-  /* margin-left: -22px; */
+
+  margin-left: -22px;
 }
 .subscribe .info h2 {
-  margin-top: 5px;
+  margin-top: 52px;
   margin-bottom: 16px;
   font-size: 26px;
   font-weight: 700;
@@ -56,6 +56,8 @@
   font-weight: 700;
   color: #ffffff;
   margin-right: 38px;
+  margin-top: 58px;
+  margin-right: 40px;
 }
 .subscribe .button p {
 }
