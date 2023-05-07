@@ -20,24 +20,19 @@
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.23);
-  /* mix-blend-mode: multiply; */
+  position: absolute;
+  top: 230px;
+  z-index: 9;
+  opacity: 85%;
 }
 .hot-news-btns button img {
 }
 .hot-news-prev-btn {
-  position: absolute;
-  top: 230px;
   left: -27px;
-  z-index: 9;
-  opacity: 85%;
   display: none;
 }
 .hot-news-next-btn {
-  position: absolute;
-  top: 230px;
   right: -27px;
-  z-index: 9;
-  opacity: 85%;
 }
 .hot-news-content {
   display: block;
@@ -81,4 +76,92 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   margin-top: 12px;
+}
+.hot-news-btn-m {
+  margin-top: 20px;
+  text-align: end;
+  display: none;
+}
+.hot-news-btn-m button {
+  border: none;
+  background: none;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+}
+.hot-news-btn-m button:last-child {
+  margin-left: 20px;
+}
+.hot-news-btn-m button img {
+  width: 54px;
+}
+.hot-news-prev-btn-m {
+}
+.hot-news-next-btn-m {
+}
+.swiper-button-disabled {
+  opacity: 35%;
+  cursor: default;
+}
+
+@media screen and (max-width: 1240px) {
+  .hot-news .inner {
+    width: 100%;
+    padding: 60px 6%;
+    height: auto;
+  }
+  .hot-news-list {
+    width: 100%;
+  }
+  .hot-news-content {
+    width: 100%;
+    height: auto;
+  }
+  .hot-news-btns button {
+    top: 40%;
+  }
+  .hot-news-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hot-news .inner {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .hot-news-title {
+    font-size: 55px;
+    letter-spacing: -1.1px;
+    padding: 50px 0 15px 0;
+  }
+  .hot-news-list {
+  }
+  .hot-news-content {
+    width: 100%;
+    background: #fff;
+  }
+  .hot-news-btns {
+    display: none;
+  }
+  .hot-news-img {
+    width: 660px;
+    height: 419px;
+  }
+  .news-title {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 51px;
+    height: 102px;
+  }
+  .news-main {
+    font-size: 18px;
+    line-height: 28px;
+    height: 56px;
+    -webkit-line-clamp: 2;
+  }
+  .hot-news-btn-m {
+    display: block;
+  }
 }

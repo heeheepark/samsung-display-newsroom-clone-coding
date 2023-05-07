@@ -609,7 +609,7 @@
       </section>
       <!-- // 카드뉴스 -->
       <!-- 커뮤니티 : 박주희 -->
-      <section class="community">
+      <!-- <section class="community">
         <div class="inner">
           <div class="community-left">
             <h2>최신 기사</h2>
@@ -715,7 +715,7 @@
           </div>
           <div class=""></div>
         </div>
-      </section>
+      </section> -->
       <!-- // 커뮤니티 -->
       <!-- 인기 기사 : 박주희 -->
       <section class="hot-news">
@@ -852,26 +852,71 @@
                 </div>
               </div>
             </div>
+            <div class="hot-news-btn-m">
+              <button>
+                <img
+                  src="images/hot-news/prev_btn_mo.svg"
+                  alt="왼쪽버튼"
+                  class="hot-news-prev-btn-m"
+                />
+              </button>
+              <button>
+                <img
+                  src="images/hot-news/next_btn_mo.svg"
+                  alt="오른쪽버튼"
+                  class="hot-news-next-btn-m"
+                />
+              </button>
+            </div>
             <script>
               var swiper = new Swiper(".sw-hot-news", {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 30,
                 navigation: {
-                  nextEl: ".hot-news-next-btn",
-                  prevEl: ".hot-news-prev-btn",
+                  nextEl: ".hot-news-next-btn-m",
+                  prevEl: ".hot-news-prev-btn-m",
                 },
                 on: {
                   activeIndexChange: function () {
-                    let prevBtn = document.querySelector(".hot-news-prev-btn");
-                    let nextBtn = document.querySelector(".hot-news-next-btn");
+                    let prevBtn = document.querySelector(
+                      ".hot-news-prev-btn-m"
+                    );
+                    let nextBtn = document.querySelector(
+                      ".hot-news-next-btn-m"
+                    );
                     if (this.realIndex == 0) {
-                      prevBtn.style.display = "none";
-                    } else if (this.realIndex == 3) {
-                      nextBtn.style.display = "none";
+                      prevBtn.classList.add("swiper-button-disabled");
+                    } else if (this.realIndex == 5) {
+                      nextBtn.classList.add("swiper-button-disabled");
                     } else {
-                      prevBtn.style.display = "block";
-                      nextBtn.style.display = "block";
+                      prevBtn.classList.remove("swiper-button-disabled");
+                      nextBtn.classList.remove("swiper-button-disabled");
                     }
+                  },
+                },
+                breakpoints: {
+                  750: {
+                    slidesPerView: 3,
+                    navigation: {
+                      nextEl: ".hot-news-next-btn",
+                      prevEl: ".hot-news-prev-btn",
+                    },
+                    on: {
+                      activeIndexChange: function () {
+                        let prevBtn =
+                          document.querySelector(".hot-news-prev-btn");
+                        let nextBtn =
+                          document.querySelector(".hot-news-next-btn");
+                        if (this.realIndex == 0) {
+                          prevBtn.style.display = "none";
+                        } else if (this.realIndex == 3) {
+                          nextBtn.style.display = "none";
+                        } else {
+                          prevBtn.style.display = "block";
+                          nextBtn.style.display = "block";
+                        }
+                      },
+                    },
                   },
                 },
               });
