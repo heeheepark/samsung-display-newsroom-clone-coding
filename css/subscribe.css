@@ -7,11 +7,11 @@
 .subscribe .inner {
 
 	position: relative;
-  background: url("/images/subscribe/newsletter_bg.svg") no-repeat center;
 }
 
 .subscribe .content {
 	
+	background: url("images/subscribe/newsletter_bg.svg") no-repeat center;
 	display: flex;	
 	width: 100%;
 	height: 169px;
@@ -67,4 +67,149 @@
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+@media screen and (max-width:1240px) {
+	.subscribe .inner {
+width: 1200px;
+height: 365px;
+	}
+
+	.subscribe .content {
+		width: 1060px;
+		height: 169px;
+		background-size: cover;
+		border-radius: 15px 15px 15px 15px;
+		margin-left: 73px;
+	}
+
+	.subscribe .letter {
+  margin-top: 32px;
+  margin-left: 52px;
+}
+	.subscribe .info {
+
+  margin-left: 43px;
+	margin-top: -18px;
+}
+.subscribe .info span {
+	width: 512px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+}
+}
+
+
+@media screen and (max-width:1024px) {
+	.subscribe .inner {
+width: 948px;
+height: 280px;
+padding: 56px 59px;
+	}
+
+	.subscribe .content {
+		width: 856px;
+		height: 166px;
+		background-size: cover;
+		border-radius: 15px 15px 15px 15px;
+		margin-left: 73px;
+		margin: 0px 0px;
+	}
+
+	.subscribe .letter {
+  margin-top: 32px;
+  margin-left: 52px;
+}
+	.subscribe .info {
+
+  margin-left: 43px;
+	margin-top: -18px;
+}
+.subscribe .info span {
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+	white-space: wrap;
+
+}
+.subscribe .button {
+  /* position: absolute; */
+  width: 185px;
+  height: 47px;
+  border-radius: 30px;
+  background: #263070;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #ffffff;
+  margin-right: 38px;
+  margin-top: 58px;
+  margin-right: 40px;
+}
+}
+	
+@media screen and (max-width:750px) {
+		.subscribe .inner {
+width: 732px;
+height: 436px;
+
+	}
+.subscribe .content {
+	display: flex;
+	flex-direction: column;
+		width: 100%;
+		height: 100%;
+		background:url("images/subscribe/newsletter_bg_ban.svg") no-repeat center;
+		background-size: cover;
+		
+		
+
+	}
+.subscribe .letter {
+ display: none;
+}
+	.subscribe .info {
+
+  margin-left: 43px;
+	margin-top: -18px;
+}
+.subscribe .info h2 {
+	 margin-top: 52px;
+  margin-bottom: 16px;
+  font-size: 43.9px;
+	letter-spacing: -0.5;
+	letter-spacing: 53.83px;
+  font-weight: 700;
+ text-align: center;
+
+}
+.subscribe .info span {
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 41px;
+	letter-spacing: -0.5px;
+	
+
+}
+.subscribe .button {
+  
+  width: 265px;
+  height: 83px;
+  border-radius: 30px;
+  background: #263070;
+  border: none;
+  cursor: pointer;
+  font-size: 27px;
+  font-family: "Pretendard";
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: -57px;
+	margin-left: 150px;
+}
+
 }

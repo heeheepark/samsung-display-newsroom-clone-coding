@@ -65,7 +65,7 @@ h2 {
 	position: fixed;
 	right: 40px;
 	bottom: 40px;
-	
+	z-index: 999999;
 
 }
 .goTop {
@@ -73,4 +73,10 @@ h2 {
 	width: 47px;
 	height: 47px;
 	border-radius: 50%;
+}
+@media screen and (max-width:1024px) {
+
+	.fix-banner .goTop {
+		display: none;
+	}
 }
