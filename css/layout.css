@@ -61,21 +61,28 @@ h2 {
   z-index: 999999;
 }
 .fix-banner {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	z-index: 999999;
 }
 .goTop {
-  display: inline-block;
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
+	display: inline-block;
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
 }
 
 @media screen and (max-width: 1240px) {
   .inner {
     width: 1054px;
   }
+}
+
+@media screen and (max-width:1024px) {
+	.fix-banner .goTop {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 750px) {
