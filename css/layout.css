@@ -80,6 +80,23 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
+  .inner {
+    width: 870px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .inner {
+    width: 656px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inner {
+    width: 100%;
+  }
+}
+/* 픽스배너 */
+@media screen and (max-width: 1024px) {
   .fix-banner .goTop {
     display: none;
   }
