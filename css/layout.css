@@ -75,7 +75,7 @@ h2 {
 
 @media screen and (max-width: 1240px) {
   .inner {
-    max-width: 1054px;
+    width: 1054px;
   }
 }
 

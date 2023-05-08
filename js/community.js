@@ -15,15 +15,13 @@ for (let i = 0; i < recentNewsArea.length; i++) {
 
 let hotClipArea = document.querySelector(".hot-clip-img-area");
 let hotClipBlackBox = document.querySelector(".h-c-black-box");
-let hotClipImg = documnet.querySelector(".hot-clip-img");
+let hotClipImg = document.querySelector(".hot-clip-thumb");
 
-for (let i = 0; i < recentNewsArea.length; i++) {
-  recentNewsArea[i].addEventListener("mouseover", function () {
-    recentNewsImg[i].style.scale = "1.1";
-    recentBlackBox[i].style.display = "block";
-  });
-  recentNewsArea[i].addEventListener("mouseout", function () {
-    recentNewsImg[i].style.scale = "1.0";
-    recentBlackBox[i].style.display = "none";
-  });
-}
+hotClipArea.addEventListener("mouseover", function () {
+  hotClipImg.style.scale = "1.1";
+  hotClipBlackBox.style.display = "block";
+});
+hotClipArea.addEventListener("mouseout", function () {
+  hotClipImg.style.scale = "1.0";
+  hotClipBlackBox.style.display = "none";
+});
