@@ -2,6 +2,7 @@
 
 /* 뉴스룸 구독 */
 .subscribe {
+
   height: 367px;
   padding: 100px 0;
 }
@@ -25,6 +26,7 @@
 }
 
 .subscribe .info {
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -106,6 +108,7 @@
 
 @media screen and (max-width: 1024px) {
   .subscribe .inner {
+
     width: 855px;
     height: 167px;
     padding: 0px 50px;
@@ -136,6 +139,7 @@
   }
   .subscribe .button {
     /* position: absolute; */
+
     width: 156px;
     height: 49px;
     border-radius: 30px;
