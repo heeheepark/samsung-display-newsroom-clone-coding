@@ -61,16 +61,16 @@ h2 {
   z-index: 999999;
 }
 .fix-banner {
-	position: fixed;
-	right: 40px;
-	bottom: 40px;
-	z-index: 999999;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999999;
 }
 .goTop {
-	display: inline-block;
-	width: 47px;
-	height: 47px;
-	border-radius: 50%;
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1240px) {
@@ -79,10 +79,27 @@ h2 {
   }
 }
 
-@media screen and (max-width:1024px) {
-	.fix-banner .goTop {
-		display: none;
-	}
+@media screen and (max-width: 1024px) {
+  .inner {
+    width: 870px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .inner {
+    width: 656px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inner {
+    width: 100%;
+  }
+}
+/* 픽스배너 */
+@media screen and (max-width: 1024px) {
+  .fix-banner .goTop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 750px) {

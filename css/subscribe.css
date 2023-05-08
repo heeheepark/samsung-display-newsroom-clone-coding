@@ -2,38 +2,39 @@
 
 /* 뉴스룸 구독 */
 .subscribe {
-	
+  height: 367px;
+  padding: 100px 0;
 }
 .subscribe .inner {
-
-	position: relative;
+  position: relative;
+  background: url("../images/subscribe/newsletter_bg.svg") no-repeat center;
+  width: 1200px;
+  height: 167px;
+  padding: 0px 68px;
 }
 
 .subscribe .content {
-	
-	background: url("images/subscribe/newsletter_bg.svg") no-repeat center;
-	display: flex;	
-	width: 100%;
-	height: 169px;
-	margin:100px 0px;
-  justify-content: space-around;
-
+  display: flex;
+  justify-content: space-between;
 }
 .subscribe .content > img {
   /* margin: 0 auto; */
 }
 .subscribe .letter {
   margin-top: 43px;
-  margin-left: 38px;
 }
 
 .subscribe .info {
-
-  margin-left: -22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 59px;
+  margin-left: -49px;
 }
 .subscribe .info h2 {
-  margin-top: 52px;
-  margin-bottom: 16px;
+  /* margin-top: 52px;
+  margin-bottom: 16px; */
+  padding: 0px 0px 12px;
   font-size: 26px;
   font-weight: 700;
   text-align: start;
@@ -57,7 +58,7 @@
   color: #ffffff;
   margin-right: 38px;
   margin-top: 58px;
-  margin-right: 40px;
+  margin-right: 6px;
 }
 .subscribe .button p {
 }
@@ -68,148 +69,140 @@
   color: #ffffff;
   text-align: center;
 }
-@media screen and (max-width:1240px) {
-	.subscribe .inner {
-width: 1200px;
-height: 365px;
-	}
+/* 너비 1240px */
+@media screen and (max-width: 1240px) {
+  .subscribe {
+    height: 29.6vw;
+    padding: 8.1vw 0;
+  }
 
-	.subscribe .content {
-		width: 1060px;
-		height: 169px;
-		background-size: cover;
-		border-radius: 15px 15px 15px 15px;
-		margin-left: 73px;
-	}
+  .subscribe .inner {
+    background: url("../images/subscribe/newsletter_bg.svg") no-repeat center;
 
-	.subscribe .letter {
-  margin-top: 32px;
-  margin-left: 52px;
-}
-	.subscribe .info {
+    border-radius: 1.2vw 1.2vw 1.2vw 1.2vw;
+    width: 85vw;
+    height: 13.5vw;
+    padding: 0vw 4.5vw;
+  }
+  .subscribe .content {
+    /* margin-left: 5.9vw; */
+  }
 
-  margin-left: 43px;
-	margin-top: -18px;
-}
-.subscribe .info span {
-	width: 512px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
+  .subscribe .letter {
+    /* margin-top: 2.6vw;
+    margin-left: 4.2vw; */
+  }
+  .subscribe .info {
+    margin-left: -8.7vw;
+    margin-top: -1.2vw;
+  }
+  .subscribe .info span {
+    width: 41.3vw;
+    font-size: 1.3vw;
 
-}
-}
-
-
-@media screen and (max-width:1024px) {
-	.subscribe .inner {
-width: 948px;
-height: 280px;
-padding: 56px 59px;
-	}
-
-	.subscribe .content {
-		width: 856px;
-		height: 166px;
-		background-size: cover;
-		border-radius: 15px 15px 15px 15px;
-		margin-left: 73px;
-		margin: 0px 0px;
-	}
-
-	.subscribe .letter {
-  margin-top: 32px;
-  margin-left: 52px;
-}
-	.subscribe .info {
-
-  margin-left: 43px;
-	margin-top: -18px;
-}
-.subscribe .info span {
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-	white-space: wrap;
-
-}
-.subscribe .button {
-  /* position: absolute; */
-  width: 185px;
-  height: 47px;
-  border-radius: 30px;
-  background: #263070;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  font-family: "Pretendard";
-  font-weight: 700;
-  color: #ffffff;
-  margin-right: 38px;
-  margin-top: 58px;
-  margin-right: 40px;
-}
-}
-	
-@media screen and (max-width:750px) {
-		.subscribe .inner {
-width: 732px;
-height: 436px;
-
-	}
-.subscribe .content {
-	display: flex;
-	flex-direction: column;
-		width: 100%;
-		height: 100%;
-		background:url("images/subscribe/newsletter_bg_ban.svg") no-repeat center;
-		background-size: cover;
-		
-		
-
-	}
-.subscribe .letter {
- display: none;
-}
-	.subscribe .info {
-
-  margin-left: 43px;
-	margin-top: -18px;
-}
-.subscribe .info h2 {
-	 margin-top: 52px;
-  margin-bottom: 16px;
-  font-size: 43.9px;
-	letter-spacing: -0.5;
-	letter-spacing: 53.83px;
-  font-weight: 700;
- text-align: center;
-
-}
-.subscribe .info span {
-
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 41px;
-	letter-spacing: -0.5px;
-	
-
-}
-.subscribe .button {
-  
-  width: 265px;
-  height: 83px;
-  border-radius: 30px;
-  background: #263070;
-  border: none;
-  cursor: pointer;
-  font-size: 27px;
-  font-family: "Pretendard";
-  font-weight: 700;
-  color: #ffffff;
-  margin-top: -57px;
-	margin-left: 150px;
+    line-height: 2.1vw;
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .subscribe .inner {
+    width: 855px;
+    height: 167px;
+    padding: 0px 50px;
+    margin-top: -29px;
+  }
+
+  .subscribe .content {
+    width: 855px;
+    height: 167px;
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .subscribe .letter {
+  }
+  .subscribe .info {
+    padding-top: 87px;
+    padding-bottom: 62px;
+    margin-left: -35px;
+  }
+  .subscribe .info span {
+    width: 420px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    white-space: wrap;
+  }
+  .subscribe .button {
+    /* position: absolute; */
+    width: 156px;
+    height: 49px;
+    border-radius: 30px;
+    background: #263070;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Pretendard";
+    font-weight: 700;
+    color: #ffffff;
+    margin-right: 38px;
+    margin-top: 58px;
+    margin-right: 87px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .subscribe {
+    width: 100%;
+    height: 425px;
+    background: url("../images/subscribe/newsletter_bg_ban.svg") no-repeat
+      center;
+    background-size: cover;
+  }
+  .subscribe .inner {
+    background: none;
+  }
+  .subscribe .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .subscribe .letter {
+    display: none;
+  }
+  .subscribe .info {
+    margin-left: 43px;
+    margin-top: -18px;
+  }
+  .subscribe .info h2 {
+    margin-top: 52px;
+    margin-bottom: 16px;
+    font-size: 43.9px;
+    letter-spacing: -0.5;
+    letter-spacing: 53.83px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .subscribe .info span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: -0.5px;
+  }
+  .subscribe .button {
+    width: 265px;
+    height: 83px;
+    border-radius: 30px;
+    background: #263070;
+    border: none;
+    cursor: pointer;
+    font-size: 27px;
+    font-family: "Pretendard";
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: -57px;
+    margin-left: 150px;
+  }
 }
