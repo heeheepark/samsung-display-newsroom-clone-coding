@@ -11,14 +11,14 @@
 
   height: 270px;
 }
-.high {
+.footer .high {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 23px;
 }
-.footer .left {
+.footer .high .left {
   width: 600px;
   display: flex;
   flex-direction: row;
@@ -32,40 +32,38 @@
 
   font-weight: 700;
 }
-.left .logo {
-	height: 18px;
-
+.footer .left .logo {
+  height: 18px;
 }
-.left .logo img {
-	margin-right: 80px;
+.footer .left .logo img {
+  margin-right: 80px;
 }
-.center {
+.footer .center {
 }
-.center .menu1 {
+.footer .center .menu1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-	margin: 0px -57px 0px; 
+  margin: 0px -57px 0px;
 }
-.center .menu1 > li {
+.footer .center .menu1 > li {
   font-size: 16px;
   letter-spacing: -0.5px;
   padding-right: 50px;
 }
-.center .menu1 > li > a {
+.footer .center .menu1 > li > a {
   font-family: "Pretendard", "sans-serif";
   color: rgb(250, 250, 250);
 }
 
-
-.right .menu2 {
+.footer .right .menu2 {
   display: flex;
   width: 220px;
   flex-direction: row;
   justify-content: space-between;
 }
-.right .menu2 p {
-	display: none;
+.footer .right .menu2 p {
+  display: none;
 }
 .footer .low {
   padding-bottom: 30px;
@@ -76,4 +74,29 @@
   letter-spacing: -0.4px;
   font-weight: 400;
   color: #8e8e8e;
+}
+@media screen and (max-width: 1240px) {
+  .footer .inner {
+    position: relative;
+  }
+  .footer .high {
+    position: absolute;
+  }
+  .footer .low {
+    position: absolute;
+  }
+  .footer .high .left {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    /* 너비 걸어줘야함 */
+    justify-content: space-between;
+
+    color: rgb(255, 255, 255);
+
+    font-weight: 700;
+  }
 }

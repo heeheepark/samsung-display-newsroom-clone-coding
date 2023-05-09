@@ -74,6 +74,9 @@
 
     <!-- CSS 적용 -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/card-news.js"></script>
+
+    <script src="js/series-news.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -559,52 +562,6 @@
             <div class="pagination card-news-pg"></div>
           </div>
           <!-- initialize swiper -->
-          <script>
-            let cardNewsSwiper1 = new Swiper(".cn-card-news-left", {
-              slidesPerView: 1,
-              spaceBetween: 24,
-              speed: 1000,
-              simulateTouch: false,
-              loop: true,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-
-              navigation: {
-                nextEl: ".cn-next-bt",
-                prevEl: ".cn-prev-bt",
-              },
-              pagination: {
-                el: ".card-news-pg",
-                // 클릭이 가능
-                clickable: true,
-              },
-            });
-          </script>
-          <script>
-            let cardNewsSwiper2 = new Swiper(".cn-card-news-right", {
-              slidesPerView: 1,
-              spaceBetween: 24,
-              speed: 1000,
-              simulateTouch: false,
-              loop: true,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-
-              navigation: {
-                nextEl: ".cn-next-bt",
-                prevEl: ".cn-prev-bt",
-              },
-              pagination: {
-                el: ".card-news-pg",
-                // 클릭이 가능
-                clickable: true,
-              },
-            });
-          </script>
         </div>
       </section>
       <!-- // 카드뉴스 -->
@@ -1145,43 +1102,6 @@
             </div>
             <!-- content 닫음 -->
           </div>
-
-          <!-- last(3th) swiper -->
-          <script>
-            new Swiper(".sn-series-news", {
-              slidesPerView: 5,
-              spaceBetween: 24,
-              simulateTouch: false,
-              navigation: {
-                nextEl: ".series-news .sn-next-bt",
-                prevEl: ".series-news .sn-prev-bt",
-              },
-              on: {
-                activeIndexChange: function () {
-                  let prevBtn = document.querySelector(".sn-prev-bt");
-                  let nextBtn = document.querySelector(".sn-next-bt");
-                  if (this.realIndex == 0) {
-                    prevBtn.style.display = "none";
-                  } else if (this.realIndex == 14) {
-                    nextBtn.style.display = "none";
-                  } else {
-                    prevBtn.style.display = "block";
-                    nextBtn.style.display = "block";
-                  }
-                },
-              },
-              breakpoints: {
-                1200: {
-                  slidesPerView: 4,
-                  spaceBetween: 20,
-                },
-                1528: {
-                  slidesPerView: 5,
-                  spaceBetween: 24,
-                },
-              },
-            });
-          </script>
         </div>
       </section>
       <!-- // 연재 기사 -->
