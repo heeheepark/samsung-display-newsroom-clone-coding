@@ -861,24 +861,6 @@
                   nextEl: ".hot-news-next-btn-m",
                   prevEl: ".hot-news-prev-btn-m",
                 },
-                on: {
-                  activeIndexChange: function () {
-                    let prevBtn = document.querySelector(
-                      ".hot-news-prev-btn-m"
-                    );
-                    let nextBtn = document.querySelector(
-                      ".hot-news-next-btn-m"
-                    );
-                    if (this.realIndex == 0) {
-                      prevBtn.classList.add("swiper-button-disabled");
-                    } else if (this.realIndex == 5) {
-                      nextBtn.classList.add("swiper-button-disabled");
-                    } else {
-                      prevBtn.classList.remove("swiper-button-disabled");
-                      nextBtn.classList.remove("swiper-button-disabled");
-                    }
-                  },
-                },
                 scrollbar: {
                   el: ".hot-news-pg",
                 },
@@ -888,22 +870,6 @@
                     navigation: {
                       nextEl: ".hot-news-next-btn",
                       prevEl: ".hot-news-prev-btn",
-                    },
-                    on: {
-                      activeIndexChange: function () {
-                        let prevBtn =
-                          document.querySelector(".hot-news-prev-btn");
-                        let nextBtn =
-                          document.querySelector(".hot-news-next-btn");
-                        if (this.realIndex == 0) {
-                          prevBtn.style.display = "none";
-                        } else if (this.realIndex == 3) {
-                          nextBtn.style.display = "none";
-                        } else {
-                          prevBtn.style.display = "block";
-                          nextBtn.style.display = "block";
-                        }
-                      },
                     },
                   },
                 },

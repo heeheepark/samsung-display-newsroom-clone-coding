@@ -33,6 +33,9 @@
 .hot-news-next-btn {
   right: -27px;
 }
+.hot-news-list .swiper-button-disabled {
+  display: none;
+}
 .hot-news-content {
   display: block;
   width: 380px;
@@ -154,12 +157,17 @@
   }
   .hot-news-list {
   }
+  .hot-news-list .swiper-button-disabled {
+    display: inline-block;
+    opacity: 20%;
+    cursor: default;
+  }
   .hot-news-content {
     width: 100%;
     background: #fff;
   }
   .hot-news-btns {
-    display: none;
+    /* display: none; */
   }
   .hot-news-img {
     width: 88vw;
