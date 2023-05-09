@@ -6,18 +6,31 @@
 }
 .footer .inner {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-
   height: 270px;
+	padding: 52px 84px;
 }
-.footer .high {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 23px;
+.footer .left {
+
 }
+.footer .left .high {
+}
+.footer .left .high .logo {}
+.footer .left .high .logo  img {}
+.footer .left .high .privacy {}
+.footer .left .high .privacy p {}
+.footer .left .info {}
+.footer .left .info p {}
+.footer .right {}
+.footer .right .sns {}
+.footer .right .sns li {}
+.footer .right .sns li a {}
+.footer .right .sns li a p {
+	display: none;
+}
+.footer .right .sns li:hover  > a {}
+
+
 .footer .high .left {
   width: 600px;
   display: flex;

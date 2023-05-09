@@ -71,7 +71,13 @@
     />
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+    <!-- series-news scrollbar swiper 적용 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <!-- //series-news scrollbar swiper 적용 -->
     <!-- CSS 적용 -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/card-news.js"></script>
@@ -915,192 +921,201 @@
       <!-- 연재 기사 : 오영지 -->
       <section class="series-news">
         <div class="inner">
-          <div class="content">
-            <h2>연재기사</h2>
-            <p>삼성디스플레이만의 다양한 이야기를 시리즈로 보실 수 있습니다.</p>
-            <div class="btns">
-              <button class="sn-bt sn-prev-bt">
-                <img src="images/left_btn.svg" alt="이전" />
-              </button>
-              <button class="sn-bt sn-next-bt">
-                <img src="images/right_btn.svg" alt="다음" />
-              </button>
-            </div>
+          <h2>연재기사</h2>
+          <p>삼성디스플레이만의 다양한 이야기를 시리즈로 보실 수 있습니다.</p>
+          <div class="series-news-slide">
+            <button class="sn-bt sn-prev-bt">
+              <img src="images/left_btn.svg" alt="이전" />
+            </button>
+            <button class="sn-bt sn-next-bt">
+              <img src="images/right_btn.svg" alt="다음" />
+            </button>
+
+            <!-- 반응형 버튼(max-width:750px부터) -->
+            <button class="sn-bt-ban sn-prev-bt-ban">
+              <img src="images/left_btn_small.svg" alt="이전" />
+            </button>
+            <button class="sn-bt-ban sn-next-bt-ban">
+              <img src="images/right_btn_small.svg" alt="다음" />
+            </button>
+            여기
             <div class="swiper sn-series-news">
               <div class="swiper-wrapper">
                 <!-- last slide -->
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news1.png"
                       alt="사건파일 D텍티브"
                     />
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news2.png"
                       alt="오늘 이 전시 어때"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news3.png"
                       alt="미술관에 간 과학자"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news4.png"
                       alt="요리조리 기술맛집"
                     />
-                  </div>
+                  </a>
                 </div>
                 <!--  -->
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news5.png"
                       alt="응답하라 그때 그시절"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news6.png"
                       alt="어쩌다 통근버스"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news7.png"
                       alt="SDC 톡파원"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news8.png"
                       alt="D shorts"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news9.png"
                       alt="직장인 브이로그"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news10.png"
                       alt="디스플레이 용어알기"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news11.png"
                       alt="디스플레이 톺아보기"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news12.png"
                       alt="YESG구"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news13.png"
                       alt="친절한 D맨"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news14.png"
                       alt="디톡쇼"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news15.png"
                       alt="SDC On The Stage"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news16.png"
                       alt="퀀텀닷 완전정복"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news17.png"
                       alt="컬러&디스플레이"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news18.png"
                       alt="한컷 일러스트"
                     />
-                  </div>
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <div class="image">
+                  <a href="#" class="series-link">
                     <img
                       src="images/series-news/series-news19.png"
                       alt="일상 속 디스플레이의 발견"
                     />
-                  </div>
+                  </a>
                 </div>
+
+                <!-- 스크롤바 -->
+                <div class="sn-series-news swiper-scrollbar"></div>
               </div>
             </div>
-            <!-- content 닫음 -->
           </div>
         </div>
       </section>
@@ -1128,94 +1143,74 @@
       <!-- // 뉴스룸 구독 -->
       <!-- 하단 : 오영지 -->
       <footer class="footer">
-        <div class="inner">
+				<div class="inner">
+        <div class="left">
           <div class="high">
-            <div class="left">
-              <div class="logo">
-                <img src="images/footer/footer_logo.svg" alt="로고" />
-              </div>
-              <div class="center">
-                <ul class="menu1">
-                  <li>
-                    <a href="#"><strong>개인정보처리방침 </strong></a>
-                  </li>
-                  <li>
-                    <a href="#"><strong>운영정책</strong></a>
-                  </li>
-                  <li>
-                    <a href="#"><strong>뉴스룸구독</strong></a>
-                  </li>
-                </ul>
-              </div>
+            <div class="logo">
+              <img src="images/footer/footer_logo.svg" alt="로고" />
             </div>
-            <div class="right">
-              <ul class="menu2">
-                <li>
-                  <a href="#">
-                    <img src="images/footer/footer_home.svg" alt="홈" />
-                  </a>
-                  <div class="hover-up">
-                    <p>삼성디스플레이 홈페이지</p>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/footer/footer_fb.svg" alt="페이스북" />
-                  </a>
-                  <div class="hover-up">
-                    <p>페이스북</p>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/footer/footer_yt.svg" alt="유튜브" />
-                  </a>
-                  <div class="hover-up">
-                    <p>유튜브</p>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="images/footer/footer_insta.svg"
-                      alt="인스타그램"
-                    />
-                    <div class="hover-up">
-                      <p>인스타그램</p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="images/footer/footer_lang.svg"
-                      alt="글로벌 뉴스룸"
-                    />
-                  </a>
-                  <div class="hover-up">
-                    <p>글로벌 뉴스룸</p>
-                  </div>
-                </li>
-              </ul>
+            <div class="privacy">
+              <p>개인정보처리방침</p>
+              <p>운영정책</p>
+              <p>뉴스룸구독</p>
             </div>
           </div>
-          <div class="low">
-            <span>
-              본사 : 17113 경기도 용인시 기흥구 삼성로1<br />
-              대표번호 : 031-5181-1114<br />
+          <div class="info">
+            <p>본사 : 17113 경기도 용인시 기흥구 삼성로1</p>
+            <p>대표번호 : 031-5181-1114</p>
+            <p>
               Copyright © 2022 SAMSUNG DISPLAY Co.,Ltd. All Rights Reserved.
-            </span>
+            </p>
           </div>
         </div>
-      </footer>
+        <div class="right">
+          <ul class="sns">
+            <li>
+              <a href="#">
+                <img src="images/footer/footer_home.svg" alt="홈"
+              />
+						<p>삼성디스플레이홈페이지</p>
+					</a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/footer/footer_fb.svg" alt="페이스북" />
+              </a>
+							<p>페이스북</p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/footer/footer_yt.svg" alt="유튜브" />
+              </a>
+							<p>유튜브</p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/footer/footer_insta.svg" alt="인스타그램" />
+              </a>
+							<p>인스타그램</p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/footer/footer_lang.svg" alt="외국어" />
+              </a>
+							<p>글로벌 뉴스룸</p>
+            </li>
+          </ul>
+        </div>
+			</div>
+			</footer>
       <!-- // 하단 -->
     </div>
     <script src="js/header.js"></script>
     <script src="js/community.js"></script>
+    <script src="js/card-news.js"></script>
+    <script src="js/series-news.js"></script>
     <div class="fix-banner">
       <a class="goTop">
         <img src="images/top_btn.svg" alt="위로가기" />
       </a>
     </div>
-  </body>
+
+	</body>
 </html>
