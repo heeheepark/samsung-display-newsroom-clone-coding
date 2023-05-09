@@ -12,6 +12,9 @@
   background: #fff;
   z-index: 9999999;
 }
+.header-active {
+  height: 280px;
+}
 .header .inner {
   width: 100%;
   height: 100%;
@@ -24,7 +27,7 @@
 .header .logo {
   width: 161px;
   height: 48px;
-  z-index: 999999;
+  z-index: 99999;
 }
 .header .logo .svgA {
 }
@@ -99,7 +102,7 @@
   width: 100%;
   height: 207px;
   position: fixed;
-  top: -208px; /* 보이게 하려면 top: 0, 안보이게 하려면 -208px 지정*/
+  top: 100%;
   left: 0;
   background: #fff;
   display: flex;
@@ -109,6 +112,9 @@
   padding: 21px 0;
   border-bottom: 1px solid rgb(228, 228, 228);
   box-shadow: none;
+}
+.search-area-active {
+  top: 0;
 }
 .search-box {
   width: 640px;
@@ -188,20 +194,34 @@
   top: 27px;
   right: 55px;
 }
-.header-btn > button:not(:last-child) {
+.header-btn > button:nth-child(1) {
   border: none;
   background: none;
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.09);
 }
-.header-btn > button:not(:last-child):hover {
+.header-btn > button:nth-child(2) {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.09);
+}
+.header-btn > button:nth-child(1):hover {
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.header-btn > button:nth-child(2):hover {
   box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .header-btn .search-btn {
   /* display: none; */
 }
 .header-btn .search-close-btn {
+  font-size: 0;
+  display: none;
+}
+.menu-btn {
   display: none;
 }
 
@@ -229,6 +249,9 @@
     display: flex;
     justify-content: space-around;
     padding: 0 40px 0 70px;
+  }
+  .header-btn {
+    right: 55px;
   }
 }
 
@@ -272,21 +295,30 @@
   .side-menu-mid a:nth-child(4) {
     display: none;
   }
+  .search-box {
+    width: 505px;
+  }
+  .search-box > button {
+    width: 74px;
+  }
   .header-btn {
     right: 22px;
   }
 }
 @media screen and (max-width: 1024px) {
+  .black-box {
+    background: #fff;
+  }
   .header {
-    height: 86px;
+    height: 8.4vw;
   }
   .header .inner {
-    height: 86px;
+    height: 8.4vw;
   }
   .header .logo {
-    top: 20px;
-    width: 144px;
-    height: 42px;
+    top: 2vw;
+    width: 14.1vw;
+    height: 4.1vw;
   }
   .gnb {
     display: none;
@@ -294,64 +326,197 @@
   .side-menu {
     display: none;
   }
+  .search-area {
+    width: 100%;
+    height: 100%;
+    /* left: 0; */
+    flex-flow: column;
+    align-items: start;
+    justify-content: start;
+    border-bottom: none;
+    padding: 2vw 2.3vw;
+    z-index: 999999;
+  }
+  .search-area-active {
+    box-shadow: none;
+  }
+  .search-box {
+    width: 84vw;
+    height: 4.9vw;
+    position: relative;
+  }
+  .search-box input {
+    margin-left: 2.7vw;
+    font-size: 2.1vw;
+  }
+  .search-box > button {
+    width: 2.9vw;
+    height: 2.9vw;
+    font-size: 0;
+    padding: 0.5vw;
+    background: url("../images/header/input_icon.svg") no-repeat center;
+    background-size: 2.1vw;
+    position: absolute;
+    top: calc(50% - 1.5vw);
+    left: 1.5vw;
+  }
+  .search-index-area {
+    flex-direction: column;
+    height: 23.2vw;
+  }
+  .search-cate {
+    display: block;
+    margin-top: 4.4vw;
+  }
+  .cate-left {
+    margin-top: 5.3vw;
+  }
+  .search-cate > li > span {
+    font-size: 1.8vw;
+    font-weight: 500;
+    padding: 0.8vw 1.5vw;
+    border-radius: 2.9vw;
+  }
+  .search-cate > li:first-child {
+    margin-bottom: 2.9vw;
+  }
+  .search-cate > li:not(:first-child) {
+    display: inline-block;
+  }
+  .search-cate > li:first-child > span {
+    width: 100%;
+    font-size: 2.3vw;
+    font-weight: 500;
+  }
   .header-btn {
-    top: 15px;
-    right: 24px;
+    top: 1.5vw;
+    right: 2.3vw;
     display: flex;
     align-items: center;
+    z-index: 999999;
   }
   .header-btn button img {
-    width: 47px;
-    height: 47px;
+    width: 4.8vw;
+    height: 4.8vw;
+  }
+  .header-btn > .search-close-btn {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #000;
+    position: absolute;
+    top: 1.5vw;
+    right: 0.9vw;
+    letter-spacing: -0.1vw;
+  }
+  .header-btn > button:nth-child(2) {
+    box-shadow: none;
+  }
+  .header-btn > button:nth-child(2):hover {
+    box-shadow: none;
+  }
+  .search-close-btn img {
+    display: none;
   }
   .menu-btn {
-    width: 37px;
-    height: 37px;
+    position: relative;
+    display: block;
+    width: 3.8vw;
+    height: 3.8vw;
     border: none;
     background: none;
     cursor: pointer;
-    margin-left: 27px;
-    padding: 3px 0;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
+    margin-left: 2.5vw;
   }
   .menu-btn span {
     display: block;
-    width: 100%;
-    height: 3px;
-    background: rgb(29, 29, 29);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.8vw;
+    height: 0.3vw;
+    background: #000;
+  }
+  .menu-btn span:first-child {
+    top: 30%;
+  }
+  .menu-btn span:last-child {
+    top: 70%;
   }
 }
 
 @media screen and (max-width: 750px) {
   .header {
-    height: 126px;
+    height: 16.8vw;
   }
   .header .inner {
-    height: 126px;
+    height: 16.8vw;
   }
   .header .logo {
-    top: 31px;
-    left: 31px;
-    width: 208px;
-    height: 61px;
+    top: 4.1vw;
+    left: 4.1vw;
+    width: 27.7vw;
+    height: 8.1vw;
+  }
+  .search-area {
+    padding: 3.6vw 4.7vw;
+  }
+  .search-box {
+    width: 77.3vw;
+    height: 9.7vw;
+    border-radius: 6.7vw;
+  }
+  .search-box input {
+    font-size: 4.1vw;
+    margin-left: 1.3vw;
+  }
+  .search-box button {
+    width: 6vw;
+    height: 6vw;
+    background-size: 4vw;
+    top: calc(50% - 3.1vw);
+    left: calc(100% - 9.3vw);
+  }
+  .search-index-area {
+    margin-top: 5.3vw;
+  }
+  .cate-left {
+    margin-right: 0;
+  }
+  .search-cate > li > span {
+    font-size: 3.3vw;
+    padding: 1.2vw 2.8vw;
+  }
+  .search-cate > li:first-child {
+    margin-bottom: 4vw;
+  }
+  .search-cate > li:not(:first-child) > span {
+    margin-bottom: 2.7vw;
+  }
+  .search-cate > li:first-child > span {
+    font-size: 4.8vw;
+  }
+  .cate-right {
+    margin-top: 6vw;
   }
   .header-btn {
-    top: 27px;
-    right: 36px;
+    top: 3.6vw;
+    right: 4.8vw;
   }
   .header-btn button img {
-    width: 72px;
-    height: 72px;
+    width: 9.6vw;
+    height: 9.6vw;
+  }
+  .header-btn > .search-close-btn {
+    font-size: 3.6vw;
+    top: 2.4vw;
   }
   .menu-btn {
-    width: 50px;
-    height: 50px;
-    padding: 5px 0;
-    margin-left: 36px;
+    width: 6.7vw;
+    height: 6.7vw;
+    margin-left: 4.8vw;
   }
   .menu-btn span {
-    height: 4.5px;
+    width: 6.7vw;
+    height: 0.7vw;
   }
 }
