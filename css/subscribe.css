@@ -32,8 +32,6 @@
   margin-left: -49px;
 }
 .subscribe .info h2 {
-  /* margin-top: 52px;
-  margin-bottom: 16px; */
   padding: 0px 0px 12px;
   font-size: 26px;
   font-weight: 700;
@@ -52,20 +50,18 @@
   background: #263070;
   border: none;
   cursor: pointer;
-  font-size: 18px;
-  font-family: "Pretendard";
-  font-weight: 700;
-  color: #ffffff;
   margin-right: 38px;
   margin-top: 58px;
   margin-right: 6px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
+
 .subscribe .button p {
-}
-.apply p {
-  margin-top: 17px;
+  margin-top: 2px;
   font-size: 18px;
   font-weight: 700;
+  font-family: "Pretendard";
   color: #ffffff;
   text-align: center;
 }
@@ -84,14 +80,7 @@
     height: 13.5vw;
     padding: 0vw 4.5vw;
   }
-  .subscribe .content {
-    /* margin-left: 5.9vw; */
-  }
 
-  .subscribe .letter {
-    /* margin-top: 2.6vw;
-    margin-left: 4.2vw; */
-  }
   .subscribe .info {
     margin-left: -8.7vw;
     margin-top: -1.2vw;
@@ -105,104 +94,118 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .subscribe {
+    width: 98vw;
+    height: 27.7vw;
+    padding: 3.2vw 6.3vw 8vw;
+  }
   .subscribe .inner {
-    width: 855px;
-    height: 167px;
-    padding: 0px 50px;
-    margin-top: -29px;
+    height: 16.3vw;
+    padding: 0vw 4.9vw;
+    margin-top: 1.2vw;
   }
 
   .subscribe .content {
-    width: 855px;
-    height: 167px;
-    background-size: cover;
-    border-radius: 15px 15px 15px 15px;
+    width: 83.5vw;
+    height: 16.3vw;
+
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
   }
 
   .subscribe .letter {
   }
   .subscribe .info {
-    padding-top: 87px;
-    padding-bottom: 62px;
-    margin-left: -35px;
+    padding-top: 8.5vw;
+    padding-bottom: 6.1vw;
+    margin-left: -3.4vw;
   }
   .subscribe .info span {
-    width: 420px;
-    height: 44px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+    width: 41vw;
+    height: 4.3vw;
+    font-size: 1.6vw;
+
+    line-height: 2.5vw;
     white-space: wrap;
   }
   .subscribe .button {
-    /* position: absolute; */
-    width: 156px;
-    height: 49px;
-    border-radius: 30px;
+    /*  */
+    width: 15.2vw;
+    height: 4.8vw;
+    border-radius: 2.9vw;
     background: #263070;
     border: none;
     cursor: pointer;
-    font-size: 18px;
-    font-family: "Pretendard";
-    font-weight: 700;
-    color: #ffffff;
-    margin-right: 38px;
-    margin-top: 58px;
-    margin-right: 87px;
+    font-size: 1.8vw;
+    margin-right: 3.7vw;
+    margin-top: 5.7vw;
+    margin-right: 8.5vw;
   }
 }
 
 @media screen and (max-width: 750px) {
   .subscribe {
     width: 100%;
-    height: 425px;
+    height: 57.9vw;
     background: url("../images/subscribe/newsletter_bg_ban.svg") no-repeat
       center;
     background-size: cover;
+    padding: 0vw 5.6vw;
   }
+  .subscribe .letter {
+    display: none;
+  }
+
   .subscribe .inner {
     background: none;
   }
   .subscribe .content {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
   .subscribe .letter {
-    display: none;
   }
   .subscribe .info {
-    margin-left: 43px;
-    margin-top: -18px;
+    width: 83.7vw;
+    height: 19.1vw;
+    margin-left: 5.7vw;
+    /* margin-top: 15.7vw; */
+    padding-top: 27.1vw;
   }
   .subscribe .info h2 {
-    margin-top: 52px;
-    margin-bottom: 16px;
-    font-size: 43.9px;
-    letter-spacing: -0.5;
-    letter-spacing: 53.83px;
-    font-weight: 700;
-    text-align: center;
+    /* width: 73.6vw; */
+    height: 8vw;
+    font-size: 5.8vw;
+    line-height: 6.9vw;
+
+    padding: 0vw 1.1vw;
+    margin-top: -6vw;
+    margin-bottom: 1.2vw;
   }
   .subscribe .info span {
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 41px;
-    letter-spacing: -0.5px;
+    width: 83.7vw;
+    height: 9.9vw;
+    font-size: 3.4vw;
+
+    line-height: 5.6vw;
+    letter-spacing: -0.1vw;
+
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    margin-left: -5.1vw;
   }
   .subscribe .button {
-    width: 265px;
-    height: 83px;
-    border-radius: 30px;
+    width: 32.1vw;
+    height: 10.1vw;
+    border-radius: 4.9vw;
     background: #263070;
     border: none;
     cursor: pointer;
-    font-size: 27px;
-    font-family: "Pretendard";
-    font-weight: 700;
-    color: #ffffff;
-    margin-top: -57px;
-    margin-left: 150px;
+    margin-top: 7.2vw;
+    margin-left: 20vw;
+    padding: 2.7vw 1.3vw;
+  }
+  .subscribe .button p {
+    font-size: 3.6vw;
   }
 }

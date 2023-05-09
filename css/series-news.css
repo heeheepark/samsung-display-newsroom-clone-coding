@@ -177,5 +177,25 @@ border: none;
 
 }
 }
+@media screen and (max-width:1240px) {
+	
+}
+@media screen and (max-width:1200px) {
+	.series-news .inner {}
 
-
+	.sn-series-news {
+		position: relative;
+	}
+	/*사진4개 보이기로  */
+	.series-news .sn-prev-bt {
+		position:absolute;
+		top:156px;
+		left:24px
+	}
+	.series-news .sn-next-bt {
+		position: absolute;
+	top:157px;
+	left:-1093px;
+	z-index: 999999;
+	}
+}
