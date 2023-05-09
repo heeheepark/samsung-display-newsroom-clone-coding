@@ -21,14 +21,14 @@
   justify-content: space-between;
   align-items: start;
 }
-.logo {
+.header .logo {
   width: 161px;
   height: 48px;
   z-index: 999999;
 }
-.logo .svgA {
+.header .logo .svgA {
 }
-.logo .noneA {
+.header .logo .noneA {
   display: none;
 }
 .gnb {
@@ -249,7 +249,7 @@
     padding: 24px 82px 24px 25px;
     position: relative;
   }
-  .logo {
+  .header .logo {
     position: absolute;
     top: 25px;
     left: 22px;
@@ -283,7 +283,7 @@
   .header .inner {
     height: 86px;
   }
-  .logo {
+  .header .logo {
     top: 20px;
     width: 144px;
     height: 42px;
@@ -331,7 +331,7 @@
   .header .inner {
     height: 126px;
   }
-  .logo {
+  .header .logo {
     top: 31px;
     left: 31px;
     width: 208px;
