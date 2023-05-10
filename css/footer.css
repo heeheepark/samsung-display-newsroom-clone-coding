@@ -6,110 +6,96 @@
 }
 .footer .inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 270px;
-	padding: 52px 84px;
+  padding: 52px 0px;
+  /* margin: 0px 0px; */
 }
 .footer .left {
-
+  padding-top: 6px;
 }
 .footer .left .high {
-}
-.footer .left .high .logo {}
-.footer .left .high .logo  img {}
-.footer .left .high .privacy {}
-.footer .left .high .privacy p {}
-.footer .left .info {}
-.footer .left .info p {}
-.footer .right {}
-.footer .right .sns {}
-.footer .right .sns li {}
-.footer .right .sns li a {}
-.footer .right .sns li a p {
-	display: none;
-}
-.footer .right .sns li:hover  > a {}
-
-
-.footer .high .left {
-  width: 600px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-
-  /* 너비 걸어줘야함 */
   justify-content: space-between;
-
-  color: rgb(255, 255, 255);
-
-  font-weight: 700;
 }
-.footer .left .logo {
-  height: 18px;
+.footer .left .high .logo {
+  margin-right: 82px;
 }
-.footer .left .logo img {
-  margin-right: 80px;
+.footer .left .high .logo img {
 }
-.footer .center {
-}
-.footer .center .menu1 {
+.footer .left .high .privacy {
+  font-size: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0px -57px 0px;
 }
-.footer .center .menu1 > li {
+
+.footer .left .high .privacy p {
   font-size: 16px;
-  letter-spacing: -0.5px;
-  padding-right: 50px;
+  color: #fff;
+  font-weight: 600;
 }
-.footer .center .menu1 > li > a {
-  font-family: "Pretendard", "sans-serif";
-  color: rgb(250, 250, 250);
+.footer .left .high .privacy p:nth-child(2) {
+  margin: 0px 52px 0px 54px;
 }
-
-.footer .right .menu2 {
-  display: flex;
-  width: 220px;
-  flex-direction: row;
-  justify-content: space-between;
+.footer .left .info {
+  padding: 62px 0px 0px 0px;
 }
-.footer .right .menu2 p {
-  display: none;
-}
-.footer .low {
-  padding-bottom: 30px;
-}
-.footer .low > span {
+.footer .left .info p {
+  color: #8e8e8e;
+  font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  letter-spacing: -0.4px;
-  font-weight: 400;
-  color: #8e8e8e;
 }
-@media screen and (max-width: 1240px) {
-  .footer .inner {
-    position: relative;
-  }
-  .footer .high {
-    position: absolute;
-  }
-  .footer .low {
-    position: absolute;
-  }
-  .footer .high .left {
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+.footer .right {
+}
+.footer .right .sns-link {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0px 11px 0px 0px; */
+}
+.footer .right .sns-link li {
+  position: relative;
+  margin-right: 12px;
+}
+.footer .right .sns-link li a {
+}
+/* li에 a가 하나밖에 없기때문에 안먹음 */
+.footer .right .sns-link > li:last-child {
+  margin-right: 0px;
+}
+.footer .right .sns-link li p {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 6px;
+  top: -51px;
+  left: -6px;
+  white-space: nowrap;
+  color: #fff;
+  border-radius: 5px;
+  background: rgb(46, 46, 46);
+  /* transform: translate(-34%, 67%); */
+  transform: translate(-22%, 67%);
+}
 
-    /* 너비 걸어줘야함 */
-    justify-content: space-between;
-
-    color: rgb(255, 255, 255);
-
-    font-weight: 700;
-  }
+.footer .right .sns-link li:hover:nth-child(1) > p {
+  /* margin-right: 0px;    */
+  display: block;
+  left: -25px;
+}
+.footer .right .sns-link li:hover:nth-child(2) > p {
+  display: block;
+  left: 2px;
+}
+.footer .right .sns-link li:hover:nth-child(3) > p {
+  display: block;
+  left: 4px;
+}
+.footer .right .sns-link li:hover:nth-child(4) > p {
+  display: block;
+  left: 0px;
+}
+.footer .right .sns-link li:hover:nth-child(5) > p {
+  display: block;
+  left: 2px;
 }
