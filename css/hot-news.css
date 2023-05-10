@@ -25,13 +25,13 @@
   z-index: 9;
   opacity: 85%;
 }
-.hot-news-btns button img {
-}
 .hot-news-prev-btn {
   left: -27px;
+  background: url("../images/left_btn.svg") no-repeat center;
 }
 .hot-news-next-btn {
   right: -27px;
+  background: url("../images/right_btn.svg") no-repeat center;
 }
 .hot-news-list .swiper-button-disabled {
   display: none;
@@ -53,7 +53,7 @@
   width: 100%;
 }
 .hot-news-text {
-  height: 220px;
+  height: 222px;
   padding: 32px 36px;
   background: #fff;
 }
@@ -80,34 +80,8 @@
   margin-top: 12px;
 }
 .hot-news-mobile {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
-.hot-news-btn-m {
-  display: none;
-}
-.hot-news-btn-m button {
-  border: none;
-  background: none;
-  width: 7.2vw;
-  height: 7.2vw;
-  cursor: pointer;
-}
-.hot-news-btn-m button:last-child {
-  margin-left: 2vw;
-}
-.hot-news-btn-m button img {
-  width: 7.2vw;
-}
-.hot-news-prev-btn-m {
-}
-.hot-news-next-btn-m {
-}
-.hot-news-btn-m .swiper-button-disabled {
-  opacity: 20%;
-  cursor: default;
+  width: 66vw;
+  margin-top: 40px;
 }
 .hot-news-control {
   width: 66vw;
@@ -118,7 +92,6 @@
   background: rgb(224, 224, 224);
   border-radius: 2px;
 }
-
 .hot-news .swiper-scrollbar-drag {
   background: #000;
 }
@@ -155,8 +128,6 @@
     letter-spacing: -1.1px;
     padding: 6.6vw 0 2vw 0;
   }
-  .hot-news-list {
-  }
   .hot-news-list .swiper-button-disabled {
     display: inline-block;
     opacity: 20%;
@@ -166,8 +137,25 @@
     width: 100%;
     background: #fff;
   }
-  .hot-news-btns {
-    /* display: none; */
+  .hot-news-btns button {
+    width: 7.2vw;
+    height: 7.2vw;
+    box-shadow: none;
+    top: 95.5%;
+    opacity: 1;
+  }
+  .hot-news-prev-btn {
+    left: 80%;
+    background: url("../images/hot-news/prev_btn_mo.svg") no-repeat center;
+    background-size: contain;
+  }
+  .hot-news-next-btn {
+    right: 0;
+    background: url("../images/hot-news/next_btn_mo.svg") no-repeat center;
+    background-size: contain;
+  }
+  .hot-news-mobile {
+    margin-top: 5.3vw;
   }
   .hot-news-img {
     width: 88vw;
@@ -187,8 +175,6 @@
   }
   .hot-news-btn-m {
     display: block;
-  }
-  .hot-news-btn-m button {
   }
   .hot-news-control {
     display: block;
