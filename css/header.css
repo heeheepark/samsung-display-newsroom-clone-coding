@@ -223,31 +223,7 @@
   display: none;
 }
 .menu-btn {
-  /* display: none; */
-}
-.menu-btn span {
-  transform-origin: 0 0;
-  transition: transform 0.5s;
-}
-.menu-btn-active {
-}
-.menu-btn-active span:first-child {
-  transform: rotate(45deg) translate(5px, -15px);
-}
-.menu-btn-active span:last-child {
-  transform: rotate(-45deg) translate(5px, 12px);
-}
-.menu-btn span {
-  transform-origin: 0 0;
-  transition: transform 0.3s;
-}
-.menu-btn-active {
-}
-.menu-btn:hover span:first-child {
-  transform: rotate(45deg) translate(5px, -15px);
-}
-.menu-btn:hover span:last-child {
-  transform: rotate(-45deg) translate(5px, 12px);
+  display: none;
 }
 
 @media screen and (max-width: 1510px) {
