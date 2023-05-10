@@ -51,14 +51,18 @@ h2 {
   text-align: center;
 }
 .black-box {
-  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background: rgb(0, 0, 0, 0.15);
+  z-index: -99999;
+  opacity: 0;
+}
+.black-box-active {
   z-index: 999999;
+  opacity: 1;
 }
 .fix-banner {
   position: fixed;
