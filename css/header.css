@@ -224,6 +224,18 @@
 .menu-btn {
   display: none;
 }
+.menu-btn span {
+  transform-origin: 0 0;
+  transition: transform 0.3s;
+}
+.menu-btn-active {
+}
+.menu-btn:hover span:first-child {
+  transform: rotate(45deg) translate(5px, -15px);
+}
+.menu-btn:hover span:last-child {
+  transform: rotate(-45deg) translate(5px, 12px);
+}
 
 @media screen and (max-width: 1510px) {
   .side-menu-left {
