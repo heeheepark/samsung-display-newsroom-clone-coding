@@ -8,7 +8,6 @@
 .subscribe .inner {
   position: relative;
   background: url("../images/subscribe/newsletter_bg.svg") no-repeat center;
-  width: 1200px;
   height: 167px;
   padding: 0px 68px;
 }
@@ -80,7 +79,9 @@
     height: 13.5vw;
     padding: 0vw 4.5vw;
   }
-
+  .letter {
+    width: 6.5vw;
+  }
   .subscribe .info {
     margin-left: -8.7vw;
     margin-top: -1.2vw;
@@ -113,6 +114,8 @@
   }
 
   .subscribe .letter {
+    width: 8.9vw;
+    /* width: 7.4vw; */
   }
   .subscribe .info {
     padding-top: 8.5vw;
@@ -141,7 +144,12 @@
     margin-right: 8.5vw;
   }
 }
-
+@media screen and (max-width: 970px) {
+  .letter {
+    /* width: 8.8vw; */
+    width: 3vw;
+  }
+}
 @media screen and (max-width: 750px) {
   .subscribe {
     width: 100%;

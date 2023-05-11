@@ -38,13 +38,21 @@ new Swiper(".sn-series-news", {
       slidesPerView: 4,
       spaceBetween: 30,
     },
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 29,
+    },
     1035: {
       slidesPerView: 4,
       spaceBetween: 47,
     },
-    1240: {
+    1200: {
       slidesPerView: 5,
       spaceBetween: 20,
     },
+    // 1240: {
+    //   slidesPerView: 5,
+    //   spaceBetween: 20,
+    // },
   },
 });

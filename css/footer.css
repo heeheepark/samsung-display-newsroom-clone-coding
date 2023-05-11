@@ -8,8 +8,8 @@
   display: flex;
   justify-content: space-between;
   height: 270px;
-  padding: 52px 0px;
-  /* margin: 0px 0px; */
+  padding: 52px 84px;
+  margin: 0px 0px;
 }
 .footer .left {
   padding-top: 6px;
@@ -52,11 +52,11 @@
   justify-content: space-between;
   /* margin: 0px 11px 0px 0px; */
 }
-.footer .right .sns-link li {
+.footer .right .sns-link .li {
   position: relative;
   margin-right: 12px;
 }
-.footer .right .sns-link li a {
+.footer .right .sns-link .li a {
 }
 /* li에 a가 하나밖에 없기때문에 안먹음 */
 .footer .right .sns-link > li:last-child {
@@ -78,24 +78,134 @@
   transform: translate(-22%, 67%);
 }
 
-.footer .right .sns-link li:hover:nth-child(1) > p {
+.footer .right .sns-link .li:hover:nth-child(1) > p {
   /* margin-right: 0px;    */
   display: block;
   left: -25px;
 }
-.footer .right .sns-link li:hover:nth-child(2) > p {
+.footer .right .sns-link .li:hover:nth-child(2) > p {
   display: block;
   left: 2px;
 }
-.footer .right .sns-link li:hover:nth-child(3) > p {
+.footer .right .sns-link .li:hover:nth-child(3) > p {
   display: block;
   left: 4px;
 }
-.footer .right .sns-link li:hover:nth-child(4) > p {
+.footer .right .sns-link .li:hover:nth-child(4) > p {
   display: block;
   left: 0px;
 }
-.footer .right .sns-link li:hover:nth-child(5) > p {
+.footer .right .sns-link .li:hover:nth-child(5) > p {
   display: block;
   left: 2px;
+}
+.footer .right .sns-link-ban {
+  visibility: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .footer .inner {
+    display: flex;
+    height: 35.8vw;
+    flex-direction: column;
+    margin: 0vw 0vw;
+    padding: 4.9vw 4.9vw;
+  }
+  .footer .left .high {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer .logo {
+    display: inline-block;
+    width: 22.3vw;
+    height: 2vw;
+    margin-bottom: 3.1vw;
+  }
+  .footer .logo > img {
+    width: 100%;
+  }
+  .footer .left .high .privacy {
+    margin-bottom: 3.8vw;
+  }
+  .footer .left .high .privacy p {
+    font-size: 1.7vw;
+  }
+  .footer .left .info {
+    padding: 0vw;
+  }
+  .footer .left .info p {
+    font-size: 1.6vw;
+    line-height: 2.4vw;
+    letter-spacing: -0.05vw;
+  }
+
+  .footer .right .sns-link {
+    visibility: hidden;
+  }
+  .footer .right .sns-link img {
+    visibility: hidden;
+  }
+
+  .footer .right .sns-link > li {
+    margin-right: 1.8vw;
+  }
+
+  .footer .right .sns-link-ban {
+    visibility: visible;
+  }
+  .footer .right .sns-link-ban > li {
+    margin-right: 1.8vw;
+  }
+  .footer .right .sns-link-ban > li > a {
+    display: inline-block;
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+  .footer .right .sns-link-ban > li > a > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer .inner {
+    height: 67.2vw;
+    padding: 8vw;
+    margin: 0vw;
+  }
+  .footer .left .high .logo {
+    width: 40.8vw;
+    height: 3.5vw;
+    margin-top: 3.1vw;
+    margin-bottom: 5.6vw;
+    /* margin-bottom: 0.0vw; */
+  }
+  .footer .left .high .logo img {
+    width: 100%;
+  }
+  .footer .left .high .privacy p {
+    font-size: 3.1vw;
+  }
+
+  .footer .left .high .privacy > li:nth-child(2) > p {
+    margin: 0vw 1.3vw;
+  }
+
+  .footer .left .info p {
+    font-size: 2.8vw;
+    line-height: 4.8vw;
+    letter-spacing: -0.11vw;
+  }
+  .footer .right {
+    margin-top: 0;
+  }
+  .footer .right .sns-link-ban {
+    visibility: visible;
+    margin-top: 0;
+  }
+  .footer .right .sns-link-ban > li > a {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-right: 1.3vw;
+  }
+  .footer .right .sns-link-ban > li > a > img {
+    width: 100%;
+  }
 }

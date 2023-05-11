@@ -60,21 +60,41 @@
 .sn-series-news {
 }
 .series-link {
-  display: block;
-}
-.series-link img {
+  display: inline-block;
+  width: 224px;
   height: 364px;
+}
+.series-link > img {
+  /* height: 364px; */
+  width: 100%;
 }
 
 @media screen and (max-width: 1240px) {
-  .series-link img {
-    height: 317px;
+  .series-news .inner {
+  }
+  .series-link {
+    width: 193px;
+    height: 314px;
+    margin-right: 0px !important;
+  }
+  .series-link > img {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .series-link img {
+  .series-news-slide .inner {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .series-link {
+    width: 224px;
     height: 364px;
+  }
+  .series-link > img {
+    /* max-width: 937px;
+    height: 344px; */
+    width: 100%;
   }
 }
 
