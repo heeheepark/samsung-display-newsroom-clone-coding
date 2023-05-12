@@ -217,3 +217,8 @@
     font-size: 3.6vw;
   }
 }
+@media screen and (max-width: 500px) {
+  .subscribe .inner {
+    padding: 38px 0px 0px;
+  }
+}
