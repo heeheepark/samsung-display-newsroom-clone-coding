@@ -52,28 +52,53 @@ gnb.addEventListener("mouseleave", function () {
 
 menuBtn.addEventListener("click", function () {
   let checkHeaderActive = header.classList.contains("header-active");
+  let mobileGnb = document.querySelector(".m-gnb-area");
   if (checkHeaderActive === false) {
     header.classList.add("header-active");
     menuBtn.classList.add("menu-btn-active");
     document.querySelector("body").style.overflow = "hidden";
     searchBtn.style.display = "none";
-    gnb.classList.add("gnb-active");
+    mobileGnb.classList.add("m-gnb-area-active");
   } else {
     header.classList.remove("header-active");
     menuBtn.classList.remove("menu-btn-active");
     document.querySelector("body").style.overflow = "";
     searchBtn.style.display = "block";
-    gnb.classList.remove("gnb-active");
+    mobileGnb.classList.remove("m-gnb-area-active");
   }
 });
 
 // 모바일 메뉴
-// let moreMenuList = document.querySelectorAll(".main-menu > li");
-// for (let i = 0; i < moreMenuList.length; i++) {
+let mMenuList = document.querySelectorAll(".m-menu > li");
+let mSubMenu = document.querySelectorAll(".m-submenu");
+let mNowFocus; // 활성화된 번호를 기억한다.
+for (let i = 0; i < mMenuList.length; i++) {
+  mMenuList[i].addEventListener("click", function () {
+    changeFocus(i);
+  });
+}
+function changeFocus(_index) {
+  // 일단 모두 클래스를 지운다.
+  mMenuList.forEach(function (item) {
+    // item.classList.remove("");
+  });
 
-//   moreMenuList[i].addEventListener("click", function () {
-//     for(let i = 0; i)
-//     subMenu[i].classList.add("submenu-active");
-//   });
+  mSubMenu.forEach(function (item) {
+    item.classList.remove("m-submenu-active");
+  });
+
+  // 매개변수에 따라서 처리한다.
+  if (mNowFocus !== _index) {
+    // mMenuList[_index].classList.add("");
+    mSubMenu[_index].classList.add("m-submenu-active");
+    mNowFocus = _index;
+  } else {
+    mNowFocus = 1000;
+  }
+}
+
+// if (mSubMenu[i].classList.contains("m-submenu-active")) {
+//   mSubMenu[i].classList.remove("m-submenu-active");
+// } else {
+//   mSubMenu[i].classList.add("m-submenu-active");
 // }
-// console.log(moreMenuList);
