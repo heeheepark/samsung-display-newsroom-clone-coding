@@ -2,6 +2,7 @@
 
 /* 카드뉴스 */
 .card-news {
+  margin-top: 150px;
 }
 .card-news .inner {
   position: relative;
