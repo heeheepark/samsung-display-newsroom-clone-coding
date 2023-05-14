@@ -21,6 +21,7 @@ searchBtn.addEventListener("click", function () {
   searchCloseBtn.style.display = "block";
   searchArea.classList.add("search-area-active");
   menuBtn.style.display = "none";
+  document.querySelector("body").style.overflow = "hidden";
 });
 
 searchCloseBtn.addEventListener("click", function () {
@@ -29,11 +30,13 @@ searchCloseBtn.addEventListener("click", function () {
   searchCloseBtn.style.display = "none";
   searchArea.classList.remove("search-area-active");
   menuBtn.style.display = "block";
+  document.querySelector("body").style.overflow = "visible";
 });
 
 // gnb hover
 gnb.addEventListener("mouseenter", function () {
   header.classList.add("header-active");
+  blackBg.classList.add("black-box-active");
   if (winW > 1024) {
     for (let i = 0; i < subMenu.length; i++) {
       subMenu[i].classList.add("submenu-active");
@@ -44,6 +47,7 @@ gnb.addEventListener("mouseenter", function () {
 gnb.addEventListener("mouseleave", function () {
   if (winW > 1024) {
     header.classList.remove("header-active");
+    blackBg.classList.remove("black-box-active");
   }
   for (let i = 0; i < subMenu.length; i++) {
     subMenu[i].classList.remove("submenu-active");
@@ -62,7 +66,7 @@ menuBtn.addEventListener("click", function () {
   } else {
     header.classList.remove("header-active");
     menuBtn.classList.remove("menu-btn-active");
-    document.querySelector("body").style.overflow = "";
+    document.querySelector("body").style.overflow = "visible";
     searchBtn.style.display = "block";
     mobileGnb.classList.remove("m-gnb-area-active");
   }
@@ -80,16 +84,15 @@ for (let i = 0; i < mMenuList.length; i++) {
 function changeFocus(_index) {
   // 일단 모두 클래스를 지운다.
   mMenuList.forEach(function (item) {
-    // item.classList.remove("");
+    item.classList.remove("li-active");
   });
-
   mSubMenu.forEach(function (item) {
     item.classList.remove("m-submenu-active");
   });
 
   // 매개변수에 따라서 처리한다.
   if (mNowFocus !== _index) {
-    // mMenuList[_index].classList.add("");
+    mMenuList[_index].classList.add("li-active");
     mSubMenu[_index].classList.add("m-submenu-active");
     mNowFocus = _index;
   } else {

@@ -19,6 +19,7 @@ body {
 }
 .header-active {
   height: 280px;
+  overflow: hidden;
 }
 .header .inner {
   display: flex;
@@ -59,13 +60,11 @@ body {
   padding: 12px 0;
 }
 .submenu {
-  visibility: hidden;
+  display: none;
   padding: 33px 0;
-  transition-property: visibility;
-  transition-delay: 0.3s;
 }
 .submenu-active {
-  visibility: visible;
+  display: block;
 }
 .submenu li {
 }
@@ -124,7 +123,7 @@ body {
   padding: 21px 0;
   border-bottom: 1px solid rgb(228, 228, 228);
   box-shadow: none;
-  transition: top 0.8s;
+  transition: all 0.8s;
 }
 .search-area-active {
   top: 0;
@@ -343,6 +342,7 @@ body {
 @media screen and (max-width: 1024px) {
   .header {
     height: 8.4vw;
+    overflow: visible;
   }
   .header-active {
   }
@@ -370,6 +370,7 @@ body {
     border-bottom: none;
     padding: 2vw 2.3vw;
     z-index: 999999;
+    transition: none;
   }
   .search-area-active {
     box-shadow: none;
@@ -501,7 +502,7 @@ body {
     background: url("../images/header/menuArr.svg") no-repeat center;
     background-size: contain;
     transform: rotate(0);
-    transition: rotate 0.5s;
+    transition: all 0.5s;
   }
   .m-menu > li::after {
     content: "";
@@ -512,6 +513,12 @@ body {
     height: 0.1vw;
     background: rgb(228, 228, 228);
   }
+  .m-menu > .li-active::before {
+    transform: rotate(180deg);
+  }
+  .m-menu > .li-active::after {
+    background: rgb(29, 29, 29);
+  }
   .m-menu > li > a {
     display: block;
     font-size: 2.9vw;
@@ -519,13 +526,13 @@ body {
     padding: 2.3vw 0 2.9vw;
   }
   .m-submenu {
-    height: 0;
+    height: 0px;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: height 0.8s;
   }
   .m-submenu-active {
-    height: 100%;
     padding: 3.2vw 3.5vw;
+    height: 13.7vw;
   }
   .m-submenu li:not(:last-child) {
     margin-bottom: 2.6vw;
@@ -679,7 +686,7 @@ body {
     padding: 6.7vw 0 4.7vw;
   }
   .m-submenu-active {
-    height: 100%;
+    height: 20.3vw;
     padding: 7.3vw 7.1vw 0;
   }
   .m-submenu li:not(:last-child) {
