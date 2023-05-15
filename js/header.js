@@ -21,7 +21,9 @@ searchBtn.addEventListener("click", function () {
   searchCloseBtn.style.display = "block";
   searchArea.classList.add("search-area-active");
   menuBtn.style.display = "none";
-  document.querySelector("body").style.overflow = "hidden";
+  if (winW < 1024) {
+    document.querySelector("body").style.overflow = "hidden";
+  }
 });
 
 searchCloseBtn.addEventListener("click", function () {
@@ -30,7 +32,9 @@ searchCloseBtn.addEventListener("click", function () {
   searchCloseBtn.style.display = "none";
   searchArea.classList.remove("search-area-active");
   menuBtn.style.display = "block";
-  document.querySelector("body").style.overflow = "visible";
+  if (winW < 1024) {
+    document.querySelector("body").style.overflow = "visible";
+  }
 });
 
 // gnb hover

@@ -232,6 +232,7 @@ body {
 }
 .header-btn .search-close-btn {
   display: none;
+  font-family: "Pretendard", "sans-serif";
   font-size: 0;
 }
 .menu-btn {
@@ -437,7 +438,7 @@ body {
   .header-btn > .search-close-btn {
     position: absolute;
     top: 1.5vw;
-    right: 0.9vw;
+    right: 1.9vw;
     font-size: 2vw;
     font-weight: 600;
     color: #000;

@@ -126,6 +126,7 @@
     width: 85vw;
     height: 100%;
     margin-top: 3.9vw;
+    margin-bottom: 4.4vw;
   }
 
   .card-news .cn-prev-bt {
@@ -199,6 +200,7 @@
     width: 84.9vw;
     height: 100%;
     margin-left: 6.5vw;
+    margin-bottom: 0;
   }
 
   .card-news .cn-prev-bt {
@@ -270,7 +272,7 @@
   .card-news .inner {
     width: 87.4vw;
     height: 122vw;
-    margin-bottom: 85.2vw;
+    margin-bottom: 18.2vw;
     margin-left: 6vw;
   }
 
