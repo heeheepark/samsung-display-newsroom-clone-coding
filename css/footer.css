@@ -169,7 +169,7 @@
     /* height: 67.2vw; */
     /* height: 75.6vw; */
     height: 74.1vw;
-		padding: 9.3vw;
+    padding: 9.3vw;
     /* margin: 0vw; */
   }
   .footer .left .high .logo {
@@ -201,7 +201,7 @@
     margin-top: 0;
   }
   .footer .right .sns-link-ban {
-		display:flex;
+    display: flex;
     visibility: visible;
     margin-top: 0;
   }

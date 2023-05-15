@@ -4,7 +4,7 @@
 .series-news {
 }
 .series-news .inner {
-  position: relative;
+ 
   display: block;
   padding: 2.5% 0px 0px;
 }
@@ -16,7 +16,7 @@
 .series-news p {
   padding: 30px 0px 0px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -53,8 +53,12 @@
   background: url("../images/right_btn.svg") no-repeat center center;
 }
 
+.series-news .mobile-version {
+/* display: none; */
+visibility: hidden;
+}
 .series-news-slide .swiper-button-disabled {
-  display: none;
+  /* display: none; */
 }
 
 .sn-series-news {
@@ -84,31 +88,75 @@
 @media screen and (max-width: 750px) {
   .series-news .inner {
     width: 100%;
-    padding: 0px 4.8%;
+    padding: 18.5% 4.8% 11.1%;
   }
 
-  /* .sn-bt-ban {
-    position: absolute;
-    width: 53px;
-    height: 53px;
-    border-radius: 50%;
-    border: none;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.23);
-    cursor: pointer;
-    z-index: 99;
-    bottom: -82px;
-    right: 64px;
-  } */
+.series-news h2 {
+	font-size: 7.3vw;
+}
+.series-news p {
+	font-size: 4.1vw;
+	padding: 5.3% 16.3% 0;
+	line-height: 6.4vw;
+}
+ .series-news-slide {
+	position: relative;
+	width: 100%;
+	height: 92vw;
+	
+}
+.series-news .mobile-version {
+	position: absolute;
+	display:inline-block;
+	bottom: 13.3vw;
+	visibility: visible;
+/* position: absolute; */
 
-  .series-news .swiper-scrollbar {
+
+}
+.series-news .mobile-version .swiper-scrollbar{
+height: 0.5vw;
+background: rgb(224, 224, 224);
+/* border-radius: 0.3vw; */
+width: 66vw;
+}
+.series-news .swiper-scrollbar-drag {
+	background: #000;	
+}
+
+/* .series-news .mobile-version .swiper-scrollbar::-webkit-scrollbar {
+	width: 1.3vw;
+	height: 0.4vw;
+} */
+.series-news-slide .sn-btns {
+	position: absolute;
+    width: 7.1vw;
+    height: 7.1vw;
+		right: 0;
+		bottom: 15.2vw;
+		border: none;
+	 cursor: pointer;
+	 box-shadow: none;
+	 z-index: 99;
   }
-  .series-news-slide .sn-bt {
-    width: 50px;
-    height: 50px;
-  }
+	
   .series-news-slide .sn-prev-bt {
-  }
+		position: absolute;
+		top: 109%;
+		left: -96%;
+		transform:translate( -50% , -50%);
+		background: url("../images/left_btn_small.svg") no-repeat center;
+		background-size: contain;
+  
+		/* opacity:0; */
+	}
   .series-news-slide .sn-next-bt {
+		position: absolute;
+		top: 109%;
+		right: 4.0vw;
+		transform:translate( 50% , -50%);
+		background: url("../images/right_btn_small.svg") no-repeat center;
+		background-size: contain;
   }
 }
 
