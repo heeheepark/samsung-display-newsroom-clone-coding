@@ -7,7 +7,6 @@ let subMenu = document.querySelectorAll(".submenu");
 let header = document.querySelector(".header");
 let menuBtn = document.querySelector(".menu-btn");
 let gnb = document.querySelector(".gnb");
-let sideMenu = document.querySelector(".side-menu");
 
 // 윈도우 너비
 let winW = window.innerWidth;
@@ -60,6 +59,7 @@ gnb.addEventListener("mouseleave", function () {
   }
 });
 
+// menu 버튼 클릭 시
 menuBtn.addEventListener("click", function () {
   let checkHeaderActive = header.classList.contains("header-active");
   let mobileGnb = document.querySelector(".m-gnb-area");
@@ -78,17 +78,28 @@ menuBtn.addEventListener("click", function () {
   }
 });
 
+// side-menu hover
+let sideMenuLeft = document.querySelector(".side-menu-left");
+let subscribeBtn = document.querySelector(".subscribe-btn");
+sideMenuLeft.addEventListener("mouseenter", function () {
+  subscribeBtn.classList.add("subscribe-btn-active");
+  sideMenuLeft.classList.add("side-menu-left-active");
+});
+sideMenuLeft.addEventListener("mouseleave", function () {
+  subscribeBtn.classList.remove("subscribe-btn-active");
+  sideMenuLeft.classList.remove("side-menu-left-active");
+});
+
 // 모바일 메뉴
 let mMenuList = document.querySelectorAll(".m-menu > li");
 let mSubMenu = document.querySelectorAll(".m-submenu");
-let mNowFocus; // 활성화된 번호를 기억한다.
+let mNowFocus;
 for (let i = 0; i < mMenuList.length; i++) {
   mMenuList[i].addEventListener("click", function () {
     changeFocus(i);
   });
 }
 function changeFocus(_index) {
-  // 일단 모두 클래스를 지운다.
   mMenuList.forEach(function (item) {
     item.classList.remove("li-active");
   });
@@ -96,7 +107,6 @@ function changeFocus(_index) {
     item.classList.remove("m-submenu-active");
   });
 
-  // 매개변수에 따라서 처리한다.
   if (mNowFocus !== _index) {
     mMenuList[_index].classList.add("li-active");
     mSubMenu[_index].classList.add("m-submenu-active");
@@ -105,9 +115,3 @@ function changeFocus(_index) {
     mNowFocus = 1000;
   }
 }
-
-// if (mSubMenu[i].classList.contains("m-submenu-active")) {
-//   mSubMenu[i].classList.remove("m-submenu-active");
-// } else {
-//   mSubMenu[i].classList.add("m-submenu-active");
-// }

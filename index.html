@@ -71,6 +71,11 @@
     />
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ed64eef5df.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS 적용 -->
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/header.js"></script>
@@ -359,7 +364,10 @@
           </div>
           <div class="side-menu">
             <div class="side-menu-left">
-              <span>뉴스룸 구독</span>
+              <div class="subscribe-btn">
+                <span>뉴스룸 구독</span>
+                <span><i class="fa-solid fa-paper-plane"></i></span>
+              </div>
             </div>
             <div class="side-menu-mid">
               <a href="#" class="newsroom-hide">
@@ -789,10 +797,8 @@
           <h2 class="hot-news-title">인기 기사</h2>
           <div class="hot-news-list">
             <div class="hot-news-btns">
-              <button class="hot-news-prev-btn">
-              </button>
-              <button class="hot-news-next-btn">
-              </button>
+              <button class="hot-news-prev-btn"></button>
+              <button class="hot-news-next-btn"></button>
             </div>
             <div class="swiper sw-hot-news">
               <div class="swiper-wrapper">

@@ -1,8 +1,4 @@
 @charset "utf-8";
-/* 
-body {
-  overflow: hidden;
-} */
 
 /* 상단 */
 .header {
@@ -52,7 +48,7 @@ body {
 }
 .main-menu > li {
   margin: 0 10px;
-  transition: transform 0.8s;
+  transition: transform ease 0.8s;
 }
 .main-menu > li > a {
   display: inline-block;
@@ -61,21 +57,24 @@ body {
   padding: 12px 0;
 }
 .main-menu-active > li:nth-child(1) {
-  transform: translate(-10px);
+  transform: translate(-15px);
 }
 .main-menu-active > li:nth-child(2) {
-  transform: translate(-10px);
+  transform: translate(-15px);
 }
 .main-menu-active > li:nth-child(3) {
   transform: translate(-5px);
 }
 .main-menu-active > li:nth-child(4) {
-  transform: translate(5px);
+  transform: translate(15px);
 }
 .main-menu-active > li:nth-child(5) {
-  transform: translate(10px);
+  transform: translate(15px);
 }
 .submenu {
+  position: absolute;
+  top: 35px;
+  left: 0px;
   display: none;
   padding: 33px 0;
 }
@@ -101,19 +100,41 @@ body {
   transition: all 0.8s;
 }
 .side-menu-left {
+  position: relative;
   width: 106px;
   height: 34px;
   background: rgb(38, 48, 112);
   border-radius: 18px;
   cursor: pointer;
+  transition: all 0.6s;
 }
-.side-menu-left span {
+.side-menu-left-active {
+  background: rgb(34, 40, 207);
+}
+.subscribe-btn {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: top 0.6s;
+}
+.subscribe-btn-active {
+  top: -25px;
+}
+.subscribe-btn span:first-child {
   display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 34px;
   color: #fff;
   text-align: center;
+}
+.subscribe-btn span:last-child {
+  color: #fff;
+  font-size: 15px;
 }
 .side-menu-mid {
   display: flex;
@@ -285,7 +306,7 @@ body {
     justify-content: start;
     padding: 9px 0;
   }
-  .side-menu-left span {
+  .subscribe-btn span:first-child {
     font-size: 11px;
     font-weight: 500;
     line-height: 30px;
@@ -548,11 +569,14 @@ body {
     transition: height 0.8s;
   }
   .m-submenu-active {
-    padding: 3.2vw 3.5vw;
-    height: 13.7vw;
+    /* padding: 3.2vw 3.5vw; */
+    height: 19.7vw;
   }
-  .m-submenu li:not(:last-child) {
-    margin-bottom: 2.6vw;
+  .m-submenu li {
+    margin: 2.6vw 0 2.6vw 2.6vw;
+  }
+  .m-submenu li:last-child {
+    margin-bottom: 0;
   }
   .m-submenu li a {
     display: block;
