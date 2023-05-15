@@ -41,6 +41,7 @@ searchCloseBtn.addEventListener("click", function () {
 gnb.addEventListener("mouseenter", function () {
   header.classList.add("header-active");
   blackBg.classList.add("black-box-active");
+  mainMenu.classList.add("main-menu-active");
   if (winW > 1024) {
     for (let i = 0; i < subMenu.length; i++) {
       subMenu[i].classList.add("submenu-active");
@@ -52,6 +53,7 @@ gnb.addEventListener("mouseleave", function () {
   if (winW > 1024) {
     header.classList.remove("header-active");
     blackBg.classList.remove("black-box-active");
+    mainMenu.classList.remove("main-menu-active");
   }
   for (let i = 0; i < subMenu.length; i++) {
     subMenu[i].classList.remove("submenu-active");
