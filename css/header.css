@@ -597,14 +597,35 @@
     background: rgb(38, 48, 112);
     border-radius: 2.9vw;
     cursor: pointer;
+    position: relative;
   }
-  .m-side-menu-left span {
+  .m-side-menu-left-active {
+    background: rgb(34, 40, 207);
+  }
+  .m-subscribe-btn {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition: top 0.6s;
+  }
+  .m-subscribe-btn-active {
+    top: -3.2vw;
+  }
+  .m-side-menu-left span:first-child {
     display: block;
     font-size: 2vw;
     font-weight: 500;
     line-height: 4.5vw;
     color: #fff;
     text-align: center;
+  }
+  .m-subscribe-btn span:last-child {
+    color: #fff;
+    font-size: 15px;
   }
   .m-side-menu-mid {
     display: flex;
@@ -742,9 +763,31 @@
     height: 8vw;
     border-radius: 4vw;
   }
-  .m-side-menu-left span {
-    font-size: 3.2vw;
-    line-height: 8vw;
+  .m-subscribe-btn {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition: top 0.6s;
+  }
+  .m-subscribe-btn-active {
+    top: -6.2vw;
+  }
+  .m-side-menu-left span:first-child {
+    display: block;
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 4.5vw;
+    color: #fff;
+    text-align: center;
+    margin: 2vw 0;
+  }
+  .m-subscribe-btn span:last-child {
+    color: #fff;
+    font-size: 3.5vw;
   }
   .m-side-menu-mid a {
     width: 8vw;

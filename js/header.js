@@ -14,6 +14,31 @@ window.addEventListener("resize", function () {
   winW = window.innerWidth;
 });
 
+// side-menu(뉴스룸 구독 버튼) hover
+let sideMenuLeft = document.querySelector(".side-menu-left");
+let subscribeBtn = document.querySelector(".subscribe-btn");
+sideMenuLeft.addEventListener("mouseenter", function () {
+  subscribeBtn.classList.add("subscribe-btn-active");
+  sideMenuLeft.classList.add("side-menu-left-active");
+});
+sideMenuLeft.addEventListener("mouseleave", function () {
+  subscribeBtn.classList.remove("subscribe-btn-active");
+  sideMenuLeft.classList.remove("side-menu-left-active");
+});
+
+// m-side-menu (뉴스룸 구독 버튼) hover
+let mSideMenuLeft = document.querySelector(".m-side-menu-left");
+let mSubscribeBtn = document.querySelector(".m-subscribe-btn");
+mSideMenuLeft.addEventListener("mouseenter", function () {
+  mSubscribeBtn.classList.add("m-subscribe-btn-active");
+  mSideMenuLeft.classList.add("m-side-menu-left-active");
+});
+mSideMenuLeft.addEventListener("mouseleave", function () {
+  mSubscribeBtn.classList.remove("m-subscribe-btn-active");
+  mSideMenuLeft.classList.remove("m-side-menu-left-active");
+});
+
+// 검색 버튼 클릭 시
 searchBtn.addEventListener("click", function () {
   blackBg.classList.add("black-box-active");
   searchBtn.style.display = "none";
@@ -24,7 +49,6 @@ searchBtn.addEventListener("click", function () {
     document.querySelector("body").style.overflow = "hidden";
   }
 });
-
 searchCloseBtn.addEventListener("click", function () {
   blackBg.classList.remove("black-box-active");
   searchBtn.style.display = "block";
@@ -47,7 +71,6 @@ gnb.addEventListener("mouseenter", function () {
     }
   }
 });
-
 gnb.addEventListener("mouseleave", function () {
   if (winW > 1024) {
     header.classList.remove("header-active");
@@ -78,19 +101,7 @@ menuBtn.addEventListener("click", function () {
   }
 });
 
-// side-menu hover
-let sideMenuLeft = document.querySelector(".side-menu-left");
-let subscribeBtn = document.querySelector(".subscribe-btn");
-sideMenuLeft.addEventListener("mouseenter", function () {
-  subscribeBtn.classList.add("subscribe-btn-active");
-  sideMenuLeft.classList.add("side-menu-left-active");
-});
-sideMenuLeft.addEventListener("mouseleave", function () {
-  subscribeBtn.classList.remove("subscribe-btn-active");
-  sideMenuLeft.classList.remove("side-menu-left-active");
-});
-
-// 모바일 메뉴
+// 모바일 버전(max-width: 1024px) gnb
 let mMenuList = document.querySelectorAll(".m-menu > li");
 let mSubMenu = document.querySelectorAll(".m-submenu");
 let mNowFocus;

@@ -33,14 +33,14 @@ new Swiper(".sn-series-news", {
     nextEl: ".series-news .sn-next-bt",
     prevEl: ".series-news .sn-prev-bt",
   },
-	scrollbar: {
+  scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
   },
-	// pagination : { 
+  // pagination : {
   //   el : '.sn-series-news',
-  //   clickable : true, 
-	// 	},
+  //   clickable : true,
+  // 	},
   breakpoints: {
     750: {
       slidesPerView: 4,
