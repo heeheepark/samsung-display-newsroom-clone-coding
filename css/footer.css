@@ -8,7 +8,11 @@
   display: flex;
   justify-content: space-between;
   height: 270px;
+<<<<<<< HEAD
   padding: 52px 0;
+=======
+  padding: 52px 0px;
+>>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
   /* margin: 0px 0px; */
 }
 .footer .left {
@@ -52,11 +56,20 @@
   justify-content: space-between;
   /* margin: 0px 11px 0px 0px; */
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
 .footer .right .sns-link > li {
   position: relative;
   margin-right: 12px;
 }
+<<<<<<< HEAD
 .footer .right .sns-link > li a {
+=======
+
+.footer .right .sns-link .li a {
+>>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
 }
 /* li에 a가 하나밖에 없기때문에 안먹음 */
 .footer .right .sns-link > li:last-child {
@@ -78,11 +91,16 @@
   transform: translate(-22%, 67%);
 }
 
+<<<<<<< HEAD
 .footer .right .sns-link li:hover:nth-child(1) > p {
+=======
+.footer .right .sns-link > li:hover:nth-child(1) > p {
+>>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
   /* margin-right: 0px;    */
   display: block;
   left: -25px;
 }
+<<<<<<< HEAD
 .footer .right .sns-link li:hover:nth-child(2) > p {
   display: block;
   left: 2px;
@@ -96,6 +114,21 @@
   left: 0px;
 }
 .footer .right .sns-link li:hover:nth-child(5) > p {
+=======
+.footer .right .sns-link > li:hover:nth-child(2) > p {
+  display: block;
+  left: 2px;
+}
+.footer .right .sns-link > li:hover:nth-child(3) > p {
+  display: block;
+  left: 4px;
+}
+.footer .right .sns-link > li:hover:nth-child(4) > p {
+  display: block;
+  left: 0px;
+}
+.footer .right .sns-link > li:hover:nth-child(5) > p {
+>>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
   display: block;
   left: 2px;
 }
@@ -158,6 +191,7 @@
   }
 
   .footer .right .sns-link-ban {
+    display: flex;
     visibility: visible;
   }
   .footer .right .sns-link-ban > li {

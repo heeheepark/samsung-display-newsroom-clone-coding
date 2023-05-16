@@ -22,7 +22,8 @@
 .subscribe .letter {
   margin-top: 4%;
 }
-
+.subscribe .letter img {
+}
 .subscribe .info {
   display: flex;
   flex-direction: column;
@@ -67,7 +68,6 @@
 /* 너비 1240px */
 @media screen and (max-width: 1240px) {
   .subscribe {
-    height: 29.6vw;
     padding: 8.1vw 0;
   }
 
@@ -76,13 +76,21 @@
 
     border-radius: 1.2vw 1.2vw 1.2vw 1.2vw;
     width: 85vw;
-    height: 13.5vw;
+
     padding: 0vw 4.5vw;
   }
   .letter {
+<<<<<<< HEAD
     width: 6.5vw;
   }
   .letter img {
+=======
+    /* width: 6.5vw; */
+    /* width: 100%; */
+  }
+  .letter img {
+    width: 7.2vw;
+>>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
   }
   .subscribe .info {
     margin-left: -8.7vw;
@@ -166,7 +174,9 @@
   .subscribe .letter {
     display: none;
   }
-
+  .subscribe .letter img {
+    width: ;
+  }
   .subscribe .inner {
     background: none;
   }
