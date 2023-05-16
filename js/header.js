@@ -61,7 +61,7 @@ searchCloseBtn.addEventListener("click", function () {
 });
 
 // gnb hover
-gnb.addEventListener("mouseenter", function () {
+mainMenu.addEventListener("mouseenter", function () {
   header.classList.add("header-active");
   blackBg.classList.add("black-box-active");
   mainMenu.classList.add("main-menu-active");
@@ -71,7 +71,7 @@ gnb.addEventListener("mouseenter", function () {
     }
   }
 });
-gnb.addEventListener("mouseleave", function () {
+mainMenu.addEventListener("mouseleave", function () {
   if (winW > 1024) {
     header.classList.remove("header-active");
     blackBg.classList.remove("black-box-active");

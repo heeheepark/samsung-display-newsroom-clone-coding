@@ -381,8 +381,10 @@
   .header {
     height: 8.4vw;
     overflow: visible;
+    /* transition: none; */
   }
   .header-active {
+    height: 8.4vw;
   }
   .header .inner {
     height: 8.4vw;
@@ -648,7 +650,7 @@
   }
   .header-active {
     width: 100vw;
-    height: 100vh;
+    height: 16.8vw;
   }
   .header .inner {
     height: 16.8vw;
@@ -749,10 +751,14 @@
   }
   .m-submenu-active {
     height: 20.3vw;
-    padding: 7.3vw 7.1vw 0;
+    margin: 3.3vw 0 2.3vw;
+    overflow: auto;
   }
-  .m-submenu li:not(:last-child) {
-    margin-bottom: 4.7vw;
+  .m-submenu-active::-webkit-scrollbar {
+    display: none;
+  }
+  .m-submenu li {
+    margin: 4.3vw 7.1vw 2.3vw;
   }
   .m-submenu li a {
     font-size: 4.1vw;
