@@ -61,10 +61,10 @@
   transform: translate(-15px);
 }
 .main-menu-active > li:nth-child(3) {
-  transform: translate(-5px);
+  transform: translate(-15px);
 }
 .main-menu-active > li:nth-child(4) {
-  transform: translate(15px);
+  transform: translate(20px);
 }
 .main-menu-active > li:nth-child(5) {
   transform: translate(15px);
@@ -84,6 +84,7 @@
 .submenu li a {
   font-size: 16px;
   line-height: 37px;
+  white-space: nowrap;
 }
 .submenu li:hover a {
   font-weight: 600;
