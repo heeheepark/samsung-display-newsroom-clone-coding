@@ -10,9 +10,6 @@
   margin-top: 60px;
   margin-bottom: 85px;
 }
-/* .cn-card-news .image {
-  display: flex;
-} */
 .card-news .btns {
   position: absolute;
   z-index: 5;
@@ -209,7 +206,6 @@
   }
   .card-news .cn-next-bt {
     top: 13.6vw;
-    /*  */
     right: -90.9vw;
   }
   .cn-card-news-wrap {

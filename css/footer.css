@@ -8,12 +8,7 @@
   display: flex;
   justify-content: space-between;
   height: 270px;
-<<<<<<< HEAD
   padding: 52px 0;
-=======
-  padding: 52px 0px;
->>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
-  /* margin: 0px 0px; */
 }
 .footer .left {
   padding-top: 6px;
@@ -54,24 +49,13 @@
 .footer .right .sns-link {
   display: flex;
   justify-content: space-between;
-  /* margin: 0px 11px 0px 0px; */
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
 .footer .right .sns-link > li {
   position: relative;
   margin-right: 12px;
 }
-<<<<<<< HEAD
 .footer .right .sns-link > li a {
-=======
-
-.footer .right .sns-link .li a {
->>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
 }
-/* li에 a가 하나밖에 없기때문에 안먹음 */
 .footer .right .sns-link > li:last-child {
   margin-right: 0px;
 }
@@ -87,34 +71,13 @@
   color: #fff;
   border-radius: 5px;
   background: rgb(46, 46, 46);
-  /* transform: translate(-34%, 67%); */
   transform: translate(-22%, 67%);
 }
 
-<<<<<<< HEAD
-.footer .right .sns-link li:hover:nth-child(1) > p {
-=======
 .footer .right .sns-link > li:hover:nth-child(1) > p {
->>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
-  /* margin-right: 0px;    */
   display: block;
   left: -25px;
 }
-<<<<<<< HEAD
-.footer .right .sns-link li:hover:nth-child(2) > p {
-  display: block;
-  left: 2px;
-}
-.footer .right .sns-link li:hover:nth-child(3) > p {
-  display: block;
-  left: 4px;
-}
-.footer .right .sns-link li:hover:nth-child(4) > p {
-  display: block;
-  left: 0px;
-}
-.footer .right .sns-link li:hover:nth-child(5) > p {
-=======
 .footer .right .sns-link > li:hover:nth-child(2) > p {
   display: block;
   left: 2px;
@@ -128,7 +91,6 @@
   left: 0px;
 }
 .footer .right .sns-link > li:hover:nth-child(5) > p {
->>>>>>> 2e1c716074bde1c18b18fae3316364ed352c347a
   display: block;
   left: 2px;
 }
@@ -209,20 +171,14 @@
 
 @media screen and (max-width: 750px) {
   .footer .inner {
-    /* height: 67.2vw; */
-    /* height: 75.6vw; */
     height: 74.1vw;
     padding: 9.3vw;
-    /* margin: 0vw; */
   }
   .footer .left .high .logo {
-    /* width: 40.8vw; */
     width: 340px;
-    /* height: 3.5vw; */
     height: 29px;
     margin-top: 4.1vw;
     margin-bottom: 5.6vw;
-    /* margin-bottom: 0.0vw; */
   }
   .footer .left .high .logo img {
     width: 100%;
