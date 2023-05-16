@@ -32,8 +32,6 @@
   height: 48px;
   z-index: 99999;
 }
-.header .logo .svgA {
-}
 .header .logo .noneA {
   display: none;
 }
@@ -142,6 +140,9 @@
 }
 .side-menu-mid a {
   margin-left: 3px;
+}
+.side-menu-mid a:hover {
+  opacity: 60%;
 }
 .side-menu-mid .newsroom-hide {
   display: none;
@@ -274,6 +275,7 @@
 }
 .menu-btn {
   display: block;
+  border: none;
 }
 .menu-btn span {
   transition: all 0.5s;

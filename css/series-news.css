@@ -98,6 +98,11 @@
     padding: 5.3% 16.3% 0;
     line-height: 6.4vw;
   }
+  .series-news-slide .swiper-button-disabled {
+    display: inline-block;
+    opacity: 20%;
+    cursor: default;
+  }  
   .series-news-slide {
     position: relative;
     width: 100%;
@@ -178,11 +183,11 @@
     height: 7.1vw;
     /* right: 0; */
     /* bottom: 15.2vw; */
-    border: none;
+    /* border: none;
     cursor: pointer;
     box-shadow: none;
     z-index: 99;
-  }
+  } */
   .series-news-slide .sn-prev-bt {
     position: absolute;
     top: 109%;
