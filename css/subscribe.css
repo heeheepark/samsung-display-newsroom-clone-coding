@@ -79,6 +79,8 @@
     padding: 0vw 4.5vw;
   }
   .letter {
+  }
+  .letter img {
     width: 6.5vw;
   }
   .subscribe .info {
@@ -112,9 +114,6 @@
     border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
   }
 
-  .subscribe .letter {
-    width: 8.9vw;
-  }
   .subscribe .info {
     padding-top: 8.5vw;
     padding-bottom: 6.1vw;
@@ -141,11 +140,7 @@
     margin-right: 8.5vw;
   }
 }
-@media screen and (max-width: 970px) {
-  .letter {
-    width: 3vw;
-  }
-}
+
 @media screen and (max-width: 750px) {
   .subscribe {
     width: 100%;
