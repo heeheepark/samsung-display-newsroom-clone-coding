@@ -2,16 +2,18 @@
 
 
   <h1>Samsung Display Newsroom Clone Coding</h1>
-  
+  <br><br><br>
   
   
 <!-- Badges -->
 <!-- Screenshots -->
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src="assets/1.시안.png" alt="screenshot" />
 </div>
-   
+
+  <br><br>
+  
 <h4>
   <a href="https://heeheepark.github.io/samsung-display-newsroom-clone-coding/">클론코딩사이트</a>
   <span> · </span>
@@ -23,14 +25,14 @@
   </h4>
 </div>
 
-<br />
+<br /><br><br>
 
 <!-- TechStack -->
 ## :space_invader: About Team Member
 
 
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
+<a href="https://github.com/heeheepark">
+  <img src="images/readme1.png" />
 </a>
 
 - 박주희(Team Leader)
